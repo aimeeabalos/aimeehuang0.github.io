@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Press</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="p5.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<style type="text/css">
+		.browser{
+			position: relative;
+			float:left;
+		}
+		canvas{
+			position: absolute;
+			float: left;
+			top: 90px;
+			left: 50px;
+		}
+		.Search
+		{
+			position: relative;
+			float: right;
+			top: 100px;
+			margin-right: 50px;
+			font: 20px Century Gothic;
+		}
+		#keyWord
+		{
+			font: 19px Arial;
+			margin-top:10px;
+			margin-left:-10px;
+			text-align: center;
+			color: red;
+		}
+		#glass{
+			position: absolute;
+			float: left;
+			width: 180px;
+			height:180px;
+			top:15px;
+			left:-35px;
+		}
+		.intro{
+			color:grey;
+			font: 15px Century Gothic;
+			position: relative;
+			text-align: center;
+		}
+		.clear { clear:both; display:block; overflow:hidden; visibility:hidden; height:0px;}
+	</style>
+</head>
+<body>
+	<img class="browser" src="browser.png">
+	<div class="Search">
+		Find the <br><br><div style="font-size:40px">word:</div>
+		<img id="glass" src="magnifyglass.png">
+		<div id="keyWord"></div>
+	</div>
+	<div class="clear"></div>
+	<!-- <div class="intro">Click the word Here</div> -->
+</body>
+	
+</html>
