@@ -47,6 +47,74 @@
 			text-align: center;
 		}
 		.clear { clear:both; display:block; overflow:hidden; visibility:hidden; height:0px;}
+		/*stopwatch modified from http://www.sourcecodester.com/htmlcss/9322/how-create-simple-stopwatch-htmlcss-javascript.html*/
+		section{
+			font-family: 'Orbitron', sans-serif;
+		}
+		.stopwatch{text-align: center;}
+		.stopwatch .cell{
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			overflow: hidden;
+			display: inline-block;
+		}
+		.stopwatch .cell .num {
+			font-size: 35px;
+			line-height: 35px;
+			color: #444;
+			display: block;
+			-webkit-animation-play-state: running;
+			animation-play-state: running;
+		}
+		.ten{
+			-webkit-animation-name: ten;
+			animation-name: ten;
+			-webkit-animation-timing-function: steps(10);
+			animation-timing-function: steps(10);
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+		@-webkit-keyframes ten {
+			0%{margin-top: 0;}
+			100%{margin-top: -350px;}
+		}
+		@keyframes ten {
+			0%{margin-top: 0;}
+			100%{margin-top: -350px;}
+		}
+		.six{
+			-webkit-animation-name: six;
+			animation-name: six;
+			-webkit-animation-timing-function: steps(6);
+			animation-timing-function: steps(6);
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+		@-webkit-keyframes six {
+			0%{margin-top: 0;}
+			100%{margin-top: -210px;}
+		}
+		@keyframes six {
+			0%{margin-top: 0;}
+			100%{margin-top: -210px;}
+		}
+		.sec {
+			-webkit-animation-duration: 10s;
+			animation-duration: 10s;
+		}
+		.ten_sec {
+			-webkit-animation-duration: 60s;
+			animation-duration: 60s;
+		}
+		.minu {
+			-webkit-animation-duration: 600s;
+			animation-duration: 600s;
+		}
+		.ten_minu {
+			-webkit-animation-duration: 3600s;
+			animation-duration: 3600s;
+		}
 	</style>
 </head>
 <body>
@@ -57,6 +125,25 @@
 		<div id="keyWord"></div>
 	</div>
 	<div class="clear"></div>
+	<section>
+	<div class="stopwatch">
+		<div class="cell">
+			<span class="num six ten_minu">0 1 2 3 4 5</span>
+		</div>
+		<div class="cell">
+			<span class="num ten minu">0 1 2 3 4 5 6 7 8 9</span>
+		</div>
+		<div class="cell">
+			<span class="num">:</span>
+		</div>
+		<div class="cell">
+			<span class="num six ten_sec">0 1 2 3 4 5</span>
+		</div>
+		<div class="cell">
+			<span class="num ten sec">0 1 2 3 4 5 6 7 8 9</span>
+		</div>
+	</div>
+	</section>
 	<!-- <div class="intro">Click the word Here</div> -->
 </body>
 	

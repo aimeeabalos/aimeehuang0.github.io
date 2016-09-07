@@ -32,12 +32,13 @@ function draw() {
 function mousePressed(){
 	if(mouseX>(assignW-50) && mouseX<(assignW+50) && mouseY>(assignH-10) && mouseY<(assignH+10))
 	{
+		// document.getElementsByClassName("num").style.animationDuration = "3s";;
 		alert("Found it!");
 		redraw();
+
 	}
 	else if(mouseX>=0 && mouseX<=1000 && mouseY>0 && mouseY<400)
 	{
-		alert("Try Again");
-		// alert(mouseX+" - "+mouseY);
+		// alert("Try Again");
 	}
 }
