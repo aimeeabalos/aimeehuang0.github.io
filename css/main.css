@@ -38,7 +38,7 @@ img {
   width: 98vw;
   height: 50vh;
   position: relative;
-  top: 17%;
+  top: 14%;
 }
 
 #name {
@@ -52,7 +52,7 @@ img {
 #name-txt {
   position: absolute;
   font-size: 34vmin;
-  top:30%;
+  top:37%;
 }
 
 
@@ -126,6 +126,9 @@ article#MyIntro{
   margin: 0;
   z-index: -100px;
 }
+#MyWork{
+  height: auto;
+}
 #AllWork{
   background-color: white;
   padding-top:2%;
@@ -140,13 +143,6 @@ article#MyIntro{
         width: 100%;
         height: 400px;
 }
-
-.scroll-projpic{
-  height:40vh;
-  margin-left:3vw;
-  margin-top:3vh;
-}
-
 /*For My Team*/
 #MyTeam{
   height: 50vw;
@@ -245,7 +241,7 @@ article#MyIntro{
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   margin:0vw 2vw;
-  background-color: black;
+  background-color: #d7d7d7;
   color: white;
   font-size: 2vw;
 }
@@ -254,6 +250,7 @@ article#MyIntro{
   margin: 1vw 2vw;
   text-align: center;
   font-size: 1.2vw;
+  color: #636363;
 }
 .casePar
 {
@@ -314,7 +311,7 @@ p.pIntro
 }
 #WordPicContainer {
   width: 98vw;
-  height: 80vh;
+  height: auto;
 }
 #WorkPic {
   -moz-column-count: 4;
