@@ -32,7 +32,6 @@ function draw() {
 function mousePressed(){
 	if(mouseX>(assignW-50) && mouseX<(assignW+50) && mouseY>(assignH-10) && mouseY<(assignH+10))
 	{
-<<<<<<< HEAD
 		alert("Found it!");
 		redraw();
 	}
@@ -40,7 +39,6 @@ function mousePressed(){
 	{
 		alert("Try Again");
 		// alert(mouseX+" - "+mouseY);
-=======
 		// document.getElementsByClassName("num").style.animationDuration = "3s";;
 		alert("Found it!");
 		redraw();
@@ -49,6 +47,5 @@ function mousePressed(){
 	else if(mouseX>=0 && mouseX<=1000 && mouseY>0 && mouseY<400)
 	{
 		// alert("Try Again");
->>>>>>> 405efeb9df9cb549ea4150ba22a81aa83d221dd0
 	}
 }

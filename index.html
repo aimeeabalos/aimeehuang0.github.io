@@ -1,172 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>A I "&" Me</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Ubuntu" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Eczar|Merriweather|Raleway|Ubuntu" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|Playfair+Display|Reem+Kufi" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins|Raleway" rel="stylesheet">
-	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>A I "&" Me</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"></head>    
 </head>
+
 <body>
-	<nav id="navigation">
-		<ul class="current"> 
-			<!-- <li><a href="#MyTeam" onclick="setActive(0)" >Who's Involved</a></li> -->
-			<!-- <li><a href="#MyWork" onclick="setActive(0)">What I do</a></li>
-			<li><a href="#MyIntro" class="active" onclick="setActive(1)"">Who I am</a></li> -->
-			
-		</ul>
-	</nav>
-	 <section id="MyContent" onscroll="setScrollXY()">
-        <article class="panel" id="MyIntro">
-            <img id="imgName" src="img/SelfIntro2.jpg">
-			<div class="content"> 
-					<ul>				
-						<li>a Developer</li>
-						<li>an Engineer</li>
-						<li>a Designer</li>
-						<li>a Traveler</li>
-						<li>a Dreamer</li>
-					</ul>
-					<p>aiming to change the world</p>
-			</div>	
-        </article>
+    <div id="content-wrapper">
+        <section>
+            <a href="#MyLink" class="mylogo" title="My Logo link"></a>
+            <article class="panel" id="MyIntro"> <!--id="h1pin"-->
+                <div class="MyName">
+                  <div id="name" class="scroll-name">
+                    <div id="name-txt">A  I  M E  E</div>
+                  </div>
+                </div>
+                <div class="content"> 
+                        <ul>                
+                            <li>a Developer</li>
+                            <li>an Engineer</li>
+                            <li>a Designer</li>
+                            <li>a Traveler</li>
+                            <li>a Dreamer</li>
+                        </ul>
+                        <p style="color:#c1c1c1;">aiming to change the world</p>
+                </div>  
+            </article>
 
-        <article class="panel" id="MyWork">
-        	<div class="tri-down">My Project</div>
+            <article class="panel" id="MyProject">
+                <div id="AllProject">
+                    <div class="tri-down">My Project</div>
+                    	<div style="height:98vh;margin-left:3vw;">
+                    		<div class="workIMG">
+                    			<div class="caseHeading">Alivio</div>   
+                    			<a href="Alivio.html"></a>
+	                            <div class="caseSub">CBDRMS</div>
+	                            <div class="caseIntro">
+	                                <p>A <b>C</b>ommunity-<b>B</b>ased <b>D</b>isaster <b>R</b>elief <b>M</b>anagement <b>S</b>ystem approach that helps communities maximize all their resources efficiently and help out more affected areas and victims. </p>
+	                            </div>
+                    		</div>
+                    	
+	                    	<div class="workIMG">
+	                            <div class="caseHeading">MNL General</div>     
+	                            <a href="HIS.html"></a>                     
+	                            <div class="caseSub">HIS</div>
+	                            <div class="caseIntro">
+	                                <p>A <b>H</b>ospital <b>I</b>nformation <b>S</b>ystem that is designed to manage the different aspects of information in terms of its' clinical, financial and operational management</p>
+	                            </div>
+	                        </div>
 
-            <div id="AllWork">
-            	<div class="projectList workslide">
-					<div class ="workIMG">
-						<div class="caseHeading">Alivio</div>	
-						<div class="casePar">
-							<!-- <a href="https://drive.google.com/open?id=0B6gTNEy2iFt3ODFZSHFBSHJJakk"> -->
-							<a href="Alivio.html">
-							<div class='slide5'></div>
-							<div class='slide4'></div>
-							<div class='slide3'></div>
-							<div class='slide2'></div>
-							<div class='slide1'></div>
-							</a>
-						</div>
-						<div class="caseSub">CBDRMS</div>
-						<div class="caseIntro">
-							<p>A <b>C</b>ommunity-<b>B</b>ased <b>D</b>isaster <b>R</b>elief <b>M</b>anagement <b>S</b>ystem approach that helps communities maximize all their resources efficiently and help out more affected areas and victims. </p>
-						</div>
+	                        <div class="workIMG">
+                            <div class="caseHeading">Medical</div>  
+                            <a href="CIS.html"></a>
+                            <div class="caseSub">CIS</div>
+                            <div class="caseIntro">
+                                <p>A <b>C</b>linical <b>I</b>nformation <b>S</b>ystem maximizes the utilization of patient information for medical care  </p>
+                            </div>
+                        </div>
+                    </div>        
+            </article>
+            <article class="panel" id="MyProjectPic">
+                <div style="height:40vh;margin-left:3vw;margin-top:3vh;">
+                    		<div class="workIMG"><a href="Alivio.html"><img src="../img/AlivioMain.PNG"></a></div>
+                    	
+	                    	<div class="workIMG"><a href="HIS.html"><img src="../img/HISMain.PNG"></a></div>
 
-					</div>
+	                        <div class="workIMG"><a href="CIS.html"><img src="../img/CISMain.PNG"></a></div>
+                        </div>
+                    </div>       
+            </article>
 
-					<div class="workIMG">
-						<div class="caseHeading">MNL General</div>							
-						<div class="casePar">
-							<a href="HIS.html">
-							<div class='slide10'></div>
-							<div class='slide9'></div>
-							<div class='slide8'></div>
-							<div class='slide7'></div>
-							<div class='slide6'></div>
-							</a>
-						</div>
-						<div class="caseSub">HIS</div>
-						<div class="caseIntro">
-							<p>A <b>H</b>ospital <b>I</b>nformation <b>S</b>ystem that is designed to manage the different aspects of information in terms of its' clinical, financial and operational management</p>
-						</div>
-					</div>
-					<div class="workIMG">
-						<div class="caseHeading">Medical</div>	
-						<div class="casePar">
-							<a href="CIS.html">
-							<div class='slide15'></div>
-							<div class='slide14'></div>
-							<div class='slide13'></div>
-							<div class='slide12'></div>
-							<div class='slide11'></div>
-							</a>
-						</div>
-						<div class="caseSub">CIS</div>
-						<div class="caseIntro">
-							<p>A <b>C</b>linical <b>I</b>nformation <b>S</b>ystem maximizes the utilization of patient information for medical care  </p>
-						</div>
-					</div>
-					<div class="nextslide" onclick="switchSlide(2)"></div>
-				</div>
+            <div class="clear"></div>
+            <article class="panel" id="MyWork" >
+                <div id="AllWork">
+                	<div id="WorkTitle" class="tri-down">My Work</div>
+                 	<div id="WordPicContainer">
+                        <ul id="WorkPic" style="list-style: none;">             
+                            <li><img src="img/PolarBear.jpg" alt="" /></li>
+                            <li><img src="img/ygcp1.jpg" alt="" /></li>
+                            <li><img src="img/WanderDuck.jpg" alt="" /></li>
+                            <li><img src="img/Rippled Swan.jpg" alt="" /></li>
+                            <li><img src="img/ygcp2.jpg" alt="" /></li>
+                            <li><img src="img/car.jpg" alt="" /></li>
+                        </ul> 
+                    </div>  
+                </div>
+            </article>
 
-				<div class="clear"></div>
-				<div class="workslide fadeImage">
-					<div class="backslide" onclick="switchSlide(1)"></div>
-					<div id="WordPicContainer">
-						<ul id="WorkPic" style="list-style: none;"> 			
-							<li><img src="img/PolarBear.jpg" alt="" /></li>
-							<li><img src="img/ygcp1.jpg" alt="" /></li>
-							<li><img src="img/WanderDuck.jpg" alt="" /></li>
-							<li><img src="img/Rippled Swan.jpg" alt="" /></li>
-							<li><img src="img/ygcp2.jpg" alt="" /></li>
-							<li><img src="img/car.jpg" alt="" /></li>
-						</ul> 
-					</div>	
-				</div>
-			</div>
+            <div class="clear"></div>
+            <article class="panel" id="MyTeam"> <!--id="unpin"-->
+                <div class="tri-down tridownMove">About Me<br></div>
 
-			
-        </article>
-        <div class="clear"></div>
-        <article class="panel" id="MyTeam">
-        	<div class="tri-down tridownMove">About Me<br><div class="teamIntro">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"</div></div>
+                <div class="teamBox">
+                    <div class="meContact">
+                        <div class="mainPic"><img  src="img/Panda.jpg"></div>
+                            <p>Aimee Abalos</p>
+                            <p style="color:gray;font-size:1vw;">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"</p>
+                            <p style="color:gray"></p>
+                        <div class="socialPic">
+                        <a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook.png"></a>
+                        <a href="https://www.instagram.com/aimmemee/"><img src="icon/ins.png"></a>
+                        <a href="https://www.linkedin.com/in/aimee-abalos-b72a21b5?authType=NAME_SEARCH&authToken=tN2S&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A411612998%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1470576542699%2Ctas%3Aaimee%20abalos"><img src="icon/linkedin.png"></a>
+                        <a href="https://twitter.com/huangwanshang"><img src="icon/twitter.png"></a>
+                        </div>
+                    </div>
+                    <div class="aboutMeContainer">
+                    	
+                        <div class="aboutMeContent">
+                            <p>
+                                Academics
+                            </p>
+                            <p class="pIntro">
+                                A IT professional graduated from De La Salle University in Philippines. Then went to China as a visiting student studying Business Management at the same time learning Chinese Language. Now, She is a Design & Technology graduate  at Parsons School of Design.
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="aboutMeContent">
+                            <p>
+                                Work Experience
+                            </p>
+                            <p class="pIntro">
+                                1 year working experience as an IT engineer working with software & hardware configuration and customer relationship.
+                            </p>
+                        </div>
+                        <div class="aboutMeContent">
+                            <p>
+                                A Few Things About Me
+                            </p>
+                            <p class="pIntro">
+                                I like <br>
+                                Technology, Design, Travel, Food, Breakfast, Hiking, Walking, Diverse culture, Nature, Philosophy, Panda
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <footer id="footer">
+                <p>(c) Aimee Abalos</p>
+                <br>
+            </footer>
 
-        	<div class="teamBox">
-        		<div class="meContact">
-        			<div class="mainPic"><img  src="img/myPic.jpeg"></div>
-        				<p>Aimee Abalos</p>
-        				<p style="color:gray"></p>
-        			<div class="socialPic">
-        			<a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook.png"></a>
-        			<a href="https://www.instagram.com/aimmemee/"><img src="icon/ins.png"></a>
-        			<a href="https://www.linkedin.com/in/aimee-abalos-b72a21b5?authType=NAME_SEARCH&authToken=tN2S&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A411612998%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1470576542699%2Ctas%3Aaimee%20abalos"><img src="icon/linkedin.png"></a>
-        			<a href="https://twitter.com/huangwanshang"><img src="icon/twitter.png"></a>
-        			</div>
-        		</div>
-        		<div class="aboutMeContainer">
-        			<div class="aboutMeContent">
-        				<p>
-        					Academics
-        				</p>
-        				<p class="pIntro">
-        					I'm a IT professional graduated from De La Salle University in Philippines. She then went to Beijing as a visiting student studying Business Management at the same time learn Chinese Language. And Now, She is a Design & Technology graduate student at Parsons School of Design.
-        				</p>
-        			</div>
-        			<div class="clear"></div>
-        			<div class="aboutMeContent">
-        				<p>
-        					Work Experience
-        				</p>
-        				<p class="pIntro">
-        					1 year working experience as an IT engineer working with software & hardware configuration and customer relationship.
-        				</p>
-        			</div>
-        			<div class="aboutMeContent">
-        				<p>
-        					Motto
-        				</p>
-        				<p class="pIntro">
-        					an Old Chinese Proverb:<br>
-        					"Travel ten thousand miles, Read ten thousand books." 
-        				</p>
-        			</div>
-        		</div>
-        		</div>
-        	</div>
-        </article>
-        <div class="clear"></div>
-        <footer id="footer" style="background:black;color:white;font-size:10%;padding:0.5%;">
-        <p>(c) Aimee Abalos
-        <br>
-    	</footer>
-    </section>
+        </section>
+    </div>
 </body>
-	<script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="js/plugins/animation.velocity.min.js"></script>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
 </html>
