@@ -30,6 +30,10 @@ var scene = new ScrollMagic.Scene({
   duration: $(window).height()-200, // pin element for the window height - 1
   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
 })
+
 .setPin("#AllProject")
 .addTo(controller); // the element we want to pin
 
+// var scene = new ScrollMagic.Scene({triggerElement: "#MyTeam"})
+//           .addIndicators() 
+//           .addTo(controller);
