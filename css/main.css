@@ -14,9 +14,11 @@ img {
     width: 100%;
     height: auto;
 }
-a {
-   text-decoration: none;
-}
+a {text-decoration: none;}
+a {color:#000000}      /* unvisited link */
+a:visited {color:#000000;}  /* visited link */
+a:hover {color:#000000;}  /* mouse over link */
+a:active {color:#000000;}  /* selected link */
 
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
@@ -210,7 +212,7 @@ article#MyIntro{
   float: left;
 }
 .mainPic img{
- border-bottom: 3px solid;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .socialPic
@@ -476,9 +478,180 @@ p.pIntro
     font-weight: 300;
 }
 
+#void,#bubble,#whatsBeyond,#glass
+{
+  width:21vw;
+  height:21vw;
+}
+#void:hover,#bubble:hover{
+  background-color: black;
+}
+#glass:hover{
+  background-color: rgba(172,169,168,0.5); 
+}
+
 #whatsBeyond{
   width:21vw;
   height:21vw;
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
+}
+#whatsBeyond:hover{
+  width:21vw;
+  height:21vw;
+  font-size: 2vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+/*Void Circle*/
+
+.circle {
+  position: absolute;
+  margin: 30% 34.5%;
+  height: 7vw;
+  width: 7vw;
+  background-color: black;
+  border-radius: 50%;
+}
+.circle1,.circle2,.circle3 {
+  position: absolute;
+  background-color: none;
+  border: 0.5vw dashed grey;
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+}
+.circle1{
+  margin: 23% 27%;
+  height: 9vw;
+  width: 9vw;
+}
+.circle2{
+  margin: 16% 20%;
+  height: 12vw;
+  width: 12vw;
+  animation-delay: 0.3s;
+}
+.circle3{
+  margin: 9% 13%;
+  height: 15vw;
+  width: 15vw;
+}
+
+
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg); 
+  }
+}
+
+/*Void Circle*/
+#bubble
+{
+  width:21vw;
+  height:21vw;
+}
+.circle {
+  position: absolute;
+  margin: 30% 34.5%;
+  height: 7vw;
+  width: 7vw;
+  background-color: black;
+  border-radius: 50%;
+}
+.circle1,.circle2,.circle3 {
+  position: absolute;
+  background-color: none;
+  border: 0.5vw dashed grey;
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+}
+.circle1{
+  margin: 23% 27%;
+  height: 9vw;
+  width: 9vw;
+}
+.circle2{
+  margin: 16% 20%;
+  height: 12vw;
+  width: 12vw;
+  animation-delay: 0.3s;
+}
+.circle3{
+  margin: 9% 13%;
+  height: 15vw;
+  width: 15vw;
+}
+
+/*bubble Me*/
+
+.sCircle {
+  position: absolute;
+  margin: 10% 34.5%;
+  bottom: 0;
+  height: 2vw;
+  width: 2vw;
+  border: 0.3vw solid grey;
+  border-radius: 50%;
+  animation: bubbleUp 5s linear infinite;
+}
+.s1{
+  margin: 10% 50%;
+  height: 1vw;
+  width: 1vw;
+  animation-delay: 1s;
+}
+.s2{
+  margin: 16% 70%;
+  height: 4vw;
+  width: 4vw;
+  animation-delay: 0.3s;
+}
+.s3{
+  margin: 16% 10%;
+  height: 3vw;
+  width: 3vw;
+  animation-delay: 1s;
+}
+
+@keyframes bubbleUp { 
+    0% { 
+        bottom:0%;
+    }
+    100% { 
+        bottom:65%;
+    }
+}
+
+/*magnify glass*/
+#glass .mCircle {
+  top:10%;
+  left:20%;
+  position: relative;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 0.5vw solid black;
+  animation: magnify 5s linear infinite;
+}
+
+#glass .mCircle:after {
+  position: absolute;
+  display: inline;
+  content: " ";
+  left: 100%;
+  top: 50%;
+  width: 3vw;
+  border: 0.5vw solid black;
+}
+@keyframes magnify { 
+    0% { 
+        transform: rotateZ(45deg);
+    }
+    50% { 
+        transform: rotateZ(70deg);
+    }
+    100% { 
+        transform: rotateZ(45deg);
+    }
 }

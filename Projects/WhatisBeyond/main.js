@@ -19,6 +19,6 @@ function pageScroll() {
 	//  setTimeout(function(){
 	// 	window.scrollBy(0,-10);
 	// }, 2300);
-    	window.scrollBy(0,-6); // horizontal and vertical scroll increments
-    	scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+    	window.scrollBy(0,-1); // horizontal and vertical scroll increments
+    	scrolldelay = setTimeout('pageScroll()',20); // scrolls every 100 milliseconds
 }

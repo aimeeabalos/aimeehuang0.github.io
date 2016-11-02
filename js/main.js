@@ -22,7 +22,7 @@ var tweenForAimee = new TimelineMax()
 var sceneHi = new ScrollMagic.Scene({
     duration: '100%'
   })
-  .addIndicators() 
+  // .addIndicators() 
   .setTween(tweenForAimee)
   .setPin(".scroll-name")
   .addTo(controller);
@@ -33,7 +33,7 @@ var picUp = new ScrollMagic.Scene({
   duration: $(window).height()*0.69, // pin element for the window height - 1
   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
 })
-.addIndicators() 
+// .addIndicators() 
 .setPin("#AllProject")
 .addTo(controller); // the element we want to pin
 
@@ -51,7 +51,7 @@ var sceneDesc = new ScrollMagic.Scene({
     triggerElement: "#MyProject",
     duration: $(window).height()*0.33
   })
-  .addIndicators() 
+  // .addIndicators() 
   .setTween(twinDesc)
   .addTo(controller);
 
@@ -69,7 +69,7 @@ var scencework = new ScrollMagic.Scene({
     triggerElement: "#MyWorkTitle",
     duration:1000
   })
-  .addIndicators() 
+  // .addIndicators() 
   .setPin("#MyWorkTitle")
   .addTo(controller);
 
