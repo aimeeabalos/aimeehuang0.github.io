@@ -1,3 +1,5 @@
+var winheight =  $(window).height();
+
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
       triggerHook: "onLeave"
@@ -5,7 +7,7 @@ var controller = new ScrollMagic.Controller({
 });
 
 /*only for logo*/
-var tweenHi = new TimelineMax()
+var tweenForAimee = new TimelineMax()
   .add([
       TweenMax.from(".scroll-name div", 2, {
         y: 0,
@@ -20,20 +22,61 @@ var tweenHi = new TimelineMax()
 var sceneHi = new ScrollMagic.Scene({
     duration: '100%'
   })
-  .setTween(tweenHi)
+  .addIndicators() 
+  .setTween(tweenForAimee)
   .setPin(".scroll-name")
   .addTo(controller);
 
 
-var scene = new ScrollMagic.Scene({
+var picUp = new ScrollMagic.Scene({
   triggerElement: "#MyProject", // point of execution
-  duration: $(window).height()-200, // pin element for the window height - 1
+  duration: $(window).height()*0.69, // pin element for the window height - 1
   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
 })
-
+.addIndicators() 
 .setPin("#AllProject")
 .addTo(controller); // the element we want to pin
 
-// var scene = new ScrollMagic.Scene({triggerElement: "#MyTeam"})
-//           .addIndicators() 
-//           .addTo(controller);
+var twinDesc = new TimelineMax()
+  .add([
+      TweenMax.from(".caseIntro", 1, {
+        y: 0,
+      }),
+      TweenMax.to(".caseIntro", 1, {
+        y: winheight*0.33,
+      })
+   ]);
+
+var sceneDesc = new ScrollMagic.Scene({
+    triggerElement: "#MyProject",
+    duration: $(window).height()*0.33
+  })
+  .addIndicators() 
+  .setTween(twinDesc)
+  .addTo(controller);
+
+// var twinwork = new TimelineMax()
+// .add([
+//     TweenMax.from("#MyWork", 1, {
+//       y: 0,
+//     }),
+//     TweenMax.to("#MyWork", 1, {
+//       y: winheight-1000,
+//     })
+//  ]);
+
+var scencework = new ScrollMagic.Scene({
+    triggerElement: "#MyWorkTitle",
+    duration:1000
+  })
+  .addIndicators() 
+  .setPin("#MyWorkTitle")
+  .addTo(controller);
+
+// var workUp = new ScrollMagic.Scene({
+//   triggerElement: "#MyWorkTitle", // point of execution
+//   duration: $(window).height()*0.33, // pin element for the window height - 1
+// })
+// .addIndicators() 
+// .setPin("#MyWorkTitle")
+// .addTo(controller); // the element we want to pin

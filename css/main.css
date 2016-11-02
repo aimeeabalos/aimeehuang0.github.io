@@ -14,9 +14,42 @@ img {
     width: 100%;
     height: auto;
 }
+a {
+   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#sideNav
+{
+  border: 1px solid;
+  position: absolute;
+  top:0;
+  width:25vw;
+  height:100vh;
+  background-color: black;
+  display: block;
+  left:-26vw;
+}
 
 /*already have hover need to add navigation bat*/
-.mylogo {
+#sideNav
+{
+  position: absolute;
+  top:0;
+  width:25vw;
+  height:100vh;
+  background-color: black;
+  display: block;
+  left:-26vw;
+  z-index: 50;
+}
+
+
+#mylogo {
    display: block;
    position: absolute;
    width: 5vw;
@@ -28,10 +61,17 @@ img {
    background-repeat: no-repeat;
 }
 
-.mylogo:hover {
+#mylogo:hover {
    background-image: url('../img/logo1.png');
    background-repeat: no-repeat;
 }
+#sideNav:hover {
+  left:0;
+}
+#mylogo:hover + #sideNav{
+  left:0;
+}
+
 
 /*My Name Aimee*/
 .MyName {
@@ -51,10 +91,9 @@ img {
 
 #name-txt {
   position: absolute;
-  font-size: 34vmin;
+  font-size: 18.5vw;
   top:37%;
 }
-
 
 
 article#MyIntro{
@@ -107,6 +146,8 @@ article#MyIntro{
   margin:0;
 }
 
+
+
 @keyframes opacity {
   0%, 100%   {opacity:0;}
   50%  {opacity:1;}
@@ -128,6 +169,7 @@ article#MyIntro{
 }
 #MyWork{
   height: auto;
+  margin-top: -1000px;
 }
 #AllWork{
   background-color: white;
@@ -166,9 +208,6 @@ article#MyIntro{
   margin-left:20%;
   height: auto;
   float: left;
-  font-family: 'Raleway', sans-serif;
- font-family: 'Poppins', sans-serif;
- font-family: 'Libre Baskerville', serif;
 }
 .mainPic img{
  border-bottom: 3px solid;
@@ -221,7 +260,7 @@ article#MyIntro{
 }
 .workIMG{
   position: relative;
-  z-index:100px;
+  z-index:100;
   width:26vw;
   height: 38vw;
   margin: 5vw 0vw 0vw 3.5vw;
@@ -230,23 +269,26 @@ article#MyIntro{
 }
 .caseHeading
 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Century Gothic Light', sans-serif;
   text-align: center;
-  border-bottom: 1px solid #d3d3d3;
+  /*border-bottom: 1px solid #d3d3d3;*/
   margin:2vw 2vw 0vw 2vw;
   font-size: 3vw;
+  font-weight: bold;
 }
 .caseSub
 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Century Gothic Light', sans-serif;
   text-align: center;
   margin:0vw 2vw;
-  background-color: #d7d7d7;
-  color: white;
+  /*background-color: black;*/
+  /*color: white;*/
+  border-bottom: 1px solid #d3d3d3;
   font-size: 2vw;
 }
 .caseIntro
 {
+  font-family: 'Century Gothic Light', sans-serif;
   margin: 1vw 2vw;
   text-align: center;
   font-size: 1.2vw;
@@ -254,7 +296,7 @@ article#MyIntro{
 }
 .casePar
 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Century Gothic Light', sans-serif;
   /*overflow: hidden;*/
   height: 15vw;
   margin: 0px auto;
@@ -283,14 +325,13 @@ p.pIntro
 /* Styling block element, not required */
   position: relative;
   padding: 2%;
-  padding-left:10%;
-  width: 50%;
-  /*border-bottom: 2px solid black;*/
+  padding-left:7%;
+  width: 90%;
   background: white;
-  /*color: #848484;*/
-  /*border: 1px solid;*/
-  font-size: 500%;
-  font-family: 'Helvetica', sans-serif;
+  font-size: 250%;
+  font-family: 'Ubuntu', sans-serif;
+  /*border-bottom: 1px solid;*/
+  /*font-weight: bold;*/
 }
 
 /* Required for Down Triangle */
@@ -304,10 +345,10 @@ p.pIntro
 
 /* Stroke */
 .tri-down:before {
-  bottom: -20px;
-  left: 17vw;
+  bottom: 18px;
+  left: 13vw;
   border-top-color: black;
-  border-width: 20px;
+  border-width: 10px;
 }
 #WordPicContainer {
   width: 98vw;
@@ -342,10 +383,102 @@ p.pIntro
   color: gray;
   font-size: 1vw;
 }
+
+
+/*grid layoute*/
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 5%;
+  /*border: 1px solid;*/
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.4%;
+  /*border: 1px solid;*/
+}
+.col:first-child { margin-left: 7; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_1_of_4 {
+  width: 23.2%;
+  height: 23.2%;
+  /*border: 1px solid;*/
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 0% 0%; }
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
+
+.image {
+    position:relative;
+    width: 23.2%;
+    height: 23.2%;
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after, .image:before {
+    position:absolute;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:after {
+    content:'\A';
+    width:101%; height:10%;
+    bottom:0; left:0;
+    background:rgba(167,169,172,0.5);
+}
+.image:before {
+    content: attr(data-content);
+    width:100%;
+    color:#fff;
+    z-index:1;
+    bottom:0;
+    padding:4px 5px;
+    text-align:center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+/*.image:after, .image:before {
+    opacity:1;
+}*/
 #footer{
   background:black;
   color:white;
   font-size:70%;
-  padding:0.1%;
+  padding:3% 10%;
   margin-top: 10%;
+}
+
+#footer p{
+    color: #696969;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 10%;
+       -moz-column-gap: 10%;
+            column-gap: 10%;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#whatsBeyond{
+  width:21vw;
+  height:21vw;
+  font-size: 3vw;
+  text-align: center;
 }

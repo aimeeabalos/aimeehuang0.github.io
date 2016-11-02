@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Brain!</title>
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/jquery-ui.min.css">  
+  <link rel="stylesheet" href="css/jquery-ui.structure.min.css">  
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css"> 
+  <!-- <link rel='stylesheet prefetch' href='http://bradfrost.github.com/this-is-responsive/styles.css'>  -->
+</head>
+<body>
+    <!--Modified Code from codepen source in style.css-->
+    <div style="font-family:'Helvetica LT Std Black';color:white;font-size:7vw;padding:3vw;">What do you want to buy today?</div>
+
+    <div class="store">
+      <div class="sign">OPEN</div>
+      <div class="store_window"></div>
+      <div class="store_door" title="It's Time To Add Knowlodge" ></div>
+      <div class="store_sign">Brain Book</div>
+      <div class="store_frame_shadow"></div>
+      <div class="store_frame"></div>
+      <div class="store_inner_wall"></div>
+      <div class="store_wall"></div>
+    </div>
+
+    <div class="store1">
+      <div class="sign1">SALE</div>
+      <div class="store_window1"></div>
+      <div class="store_door1" title="We're Having Sale Today!"></div>
+      <div class="store_sign1">Brain Dress</div>
+      <div class="store_frame_shadow1"></div>
+      <div class="store_frame1"></div>
+      <div class="store_inner_wall1"></div>
+      <div class="store_wall1"></div>
+    </div>
+
+    <div id="dialog">
+      <div class='grid-3'>
+        <h1 style="color:black;">Brain Book Store<div id="close" style="float:right;color:white;background-color:red;font-size:30%;font-family:'Helvetica';padding:1%">Close</div></h1>
+        <ul>
+          <li>
+            <div class="bookpage">
+              <div>
+                <p style="font-size:150%;font-weight:black;">Mathematics</p>
+                <br><br><br><br><br><br><br>
+                1 page ....... $50.00<br>
+                10 page ....... $400.00<br>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="bookpage">
+              <div>
+                <p style="font-size:150%;font-weight:black;">Science</p>
+                <br><br><br><br><br><br><br>
+                1 page ....... $60.00<br>
+                10 page ....... $500.00<br>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="bookpage">
+              <div>
+                <p style="font-size:150%;font-weight:black;">English</p>
+                <br><br><br><br><br><br><br>
+                1 page ....... $30.00<br>
+                10 page ....... $250.00<br>
+                100 page ....... $2300.00<br>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="bookpage">
+              <div>
+                <p style="font-size:150%;font-weight:black;">Cook</p>
+                <br><br><br><br><br><br><br>
+                1 page ....... $20.00<br>
+                10 page ....... $180.00<br>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="bookpage">
+              <div>
+                <p style="font-size:150%;font-weight:black;">Social</p>
+                <br><br><br><br><br><br><br>
+                1 page ....... $60.00<br>
+                10 page ....... $500.00<br>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="dialog1">
+      <div class='grid-3'>
+        <h1>Brain Dress Store<div id="close1" style="float:right;color:white;background-color:red;font-size:30%;font-family:'Helvetica';padding:1%">Close</div></h1>
+        <ul>
+          <li> 
+          <div class="cover1"><p><br><br>Skies<br>Blu</p></div>
+          <div style="color:black;font-size:2vw;">$100.00</div>
+          </li>
+          <li>
+          <div class="cover2"><p><br><br><br>Hey<br>Orange</p></div>
+          <div style="color:black;font-size:2vw;">$120.00</div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+   
+
+<div class="road"></div>
+<div class="floor"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+
+$( function() {
+  $( document ).tooltip(); 
+
+  $( ".store_door1" ).on( "click", function() {
+     $( "#dialog1" ).show( "slow" );
+  });
+
+  $( "#close1" ).click(function() {
+    $( "#dialog1" ).hide( 1000 );
+    // alert("wee");
+  });
+
+  $( ".store_door" ).on( "click", function() {
+     $( "#dialog" ).show( "slow" );
+  });
+
+  $( "#close" ).click(function() {
+    $( "#dialog" ).hide( 1000 );
+    // alert("wee");
+  });
+
+
+
+});
+
+    
+</script>
+
+</body>
+</html>

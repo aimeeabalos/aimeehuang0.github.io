@@ -10,11 +10,12 @@
 <body>
     <div id="content-wrapper">
         <section>
-            <a href="#MyLink" class="mylogo" title="My Logo link"></a>
+            <a href="#MyLink" id="mylogo" title="My Logo link"></a>
+            <div id="sideNav"></div> 
             <article class="panel" id="MyIntro"> <!--id="h1pin"-->
                 <div class="MyName">
                   <div id="name" class="scroll-name">
-                    <div id="name-txt">A  I  M E  E</div>
+                    <div id="name-txt">A  I  M  E  E</div>
                   </div>
                 </div>
                 <div class="content"> 
@@ -26,12 +27,14 @@
                             <li>a Dreamer</li>
                         </ul>
                         <p style="color:#c1c1c1;">aiming to change the world</p>
-                </div>  
+                </div> 
+
+                
             </article>
 
             <article class="panel" id="MyProject">
                 <div id="AllProject">
-                    <div class="tri-down">My Project</div>
+                    <div class="tri-down">MY PROJECT</div>
                     	<div style="height:98vh;margin-left:3vw;">
                     		<div class="workIMG">
                     			<div class="caseHeading">Alivio</div>   
@@ -58,6 +61,7 @@
                             <div class="caseIntro">
                                 <p>A <b>C</b>linical <b>I</b>nformation <b>S</b>ystem maximizes the utilization of patient information for medical care  </p>
                             </div>
+                            </div>
                         </div>
                     </div>        
             </article>
@@ -73,17 +77,21 @@
             </article>
 
             <div class="clear"></div>
-            <article class="panel" id="MyWork" >
+
+            <article class="panel" id="MyWorkTitle" style="z-index: 100" >
+                <div id="WorkTitle" class="tri-down">MY WORKS</div>
+            </article>
+
+            <article class="panel" id="MyWork">
                 <div id="AllWork">
-                	<div id="WorkTitle" class="tri-down">My Work</div>
-                 	<div id="WordPicContainer">
+                 	<!-- <div id="WordPicContainer">
                         <ul id="WorkPic" style="list-style: none;">             
                             <li><img src="img/PolarBear.jpg" alt="" /></li>
-                            <!-- <li><img src="img/ygcp1.jpg" alt="" /></li> -->
+                            <li><img src="img/ygcp1.jpg" alt="" /></li>
                             <li><img src="img/CoverPage.jpg" alt="" /></li>
                             <li><img src="img/WanderDuck.jpg" alt="" /></li>
                             <li><img src="img/Rippled Swan.jpg" alt="" /></li>
-                            <!-- <li><img src="img/ygcp2.jpg" alt="" /></li> -->
+                            <li><img src="img/ygcp2.jpg" alt="" /></li>
                             <li><img src="img/car.jpg" alt="" /></li>
                             <li><img src="img/stairs.jpg" alt="" /></li>
                             <li><img src="img/Typo.jpg" alt="" /></li>
@@ -91,13 +99,74 @@
                             <li><img src="img/Void.png" alt="" /></li>
                             <li><img src="img/WhatBeyond.jpg" alt="" /></li>
                         </ul> 
-                    </div>  
+                    </div>   -->
+
+                    <div class="workgroup section group">
+                        <div  data-content="Look Beyond" class="col span_1_of_4 image">
+                            <a href="Projects/WhatisBeyond/index.html" target="_blank">
+                                <div id="whatsBeyond">
+                                    What's Out There?
+                                </div>    
+                            </a>
+                        </div>
+                        <div data-content="Void" class="col span_1_of_4 image">
+                            <a href="Projects/Void/Void.html" target="_blank"><img src="img/Void.png" style="width:21vw;height: 21vw;"  alt="" /></a>
+                        </div>
+                        <div data-content="Bubble World" class="col span_1_of_4 image">
+                            <a href="Projects/BubbleMe/index.html" target="_blank"><img src="img/Bubble.PNG" style="width:21vw;height: 21vw;"  alt="" /></a>
+                        </div>
+                        <div data-content="Information Filter" class="col span_1_of_4 image">
+                            <a href="Projects/Press/index.html" target="_blank"><img src="img/Press.png" style="width:21vw;height: 21vw;"  alt="" /></a>
+                        </div>
+                        <div data-content="A I & Me" class="col span_1_of_4 image">
+                            <img src="img/Typo.jpg" style="width:21vw;height: 21vw;" alt="" />
+                        </div>
+                        <div data-content="A I & Me" class="col span_1_of_4 image">
+                            <img src="img/SelfIntro.jpg" style="width:21vw;height: 21vw;" alt="" />
+                        </div>
+                        <div data-content="Black Swan" class="col span_1_of_4 image">
+                            <img src="img/Rippled Swan.jpg" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/Void.png" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div data-content="URBAN" class="col span_1_of_4 image">
+                            <img src="img/URBAN.jpg" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/Press.png" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div data-content="Here is a caption" class="col span_1_of_4 image">
+                            <img src="img/PolarBear.jpg" style="width:21vw;height: 21vw;" alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/ygcp1.jpg" style="width:21vw;height: 21vw;" alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/WhatBeyond.jpg" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/Void.png" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/Bubble.PNG" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/Press.png" style="width:21vw;height: 21vw;"  alt="" />
+                        </div>
+                        <div data-content="Here is a caption" class="col span_1_of_4 image">
+                            <img src="img/PolarBear.jpg" style="width:21vw;height: 21vw;" alt="" />
+                        </div>
+                        <div class="col span_1_of_4 image">
+                            <img src="img/ygcp1.jpg" style="width:21vw;height: 21vw;" alt="" />
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <div class="clear"></div>
             <article class="panel" id="MyTeam"> <!--id="unpin"-->
-                <div class="tri-down tridownMove">About Me<br></div>
+                <div class="tri-down tridownMove">ABOUT ME<br></div>
 
                 <div class="teamBox">
                     <div class="meContact">
@@ -144,9 +213,8 @@
                 </div>
             </article>
             <div class="clear"></div>
-            <footer id="footer">
-                <p>(c) Aimee Abalos</p>
-                <br>
+            <footer id="footer" class="fixed_footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ducimus nemo quo totam neque quis soluta nisi obcaecati aliquam saepe dicta adipisci blanditiis quaerat earum laboriosam accusamus nesciunt! Saepe ex maxime enim asperiores nisi. Obcaecati nostrum nobis laudantium aliquam commodi veniam magni similique ullam quis pariatur voluptatem harum id error.</p>
             </footer>
 
         </section>
@@ -160,5 +228,6 @@
     <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/plugins/animation.gsap.min.js"></script>
     <script type="text/javascript" src="js/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffle-images.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </html>
