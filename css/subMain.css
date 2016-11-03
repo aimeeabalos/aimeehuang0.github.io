@@ -208,7 +208,7 @@ article:hover .panel{
  font-family: 'Libre Baskerville', serif;
 }
 .mainPic img{
- border-bottom: 3px solid;
+ border-bottom: 1px solid;
 }
 
 .socialPic
@@ -250,7 +250,7 @@ article:hover .panel{
   float: left;
 }
 .teamContact{
-  border-bottom:3px solid black; 
+  border-bottom:0.5px solid grey; 
 }
 .teamContact img{
 
@@ -420,11 +420,10 @@ p.pIntro
 
 /*Stroke*/
 .tri-down {
-/* Styling block element, not required */
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-top: 20px;
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid black;
   background: white;
   font-size: 500%;
   text-align: center;
@@ -441,10 +440,10 @@ p.pIntro
 
 /* Stroke */
 .tri-down:before {
-  bottom: -20px;
-  left: 17vw;
+  bottom: -10px;
+  left: 18vw;
   border-top-color: black;
-  border-width: 20px;
+  border-width: 10px;
 }
 
 @keyframes fade
@@ -506,30 +505,6 @@ p.pIntro
   opacity: 0;
 
 }
-.nextslide {
-    position: absolute;
-    border-right: 10px solid; 
-    border-bottom: 10px solid;
-    width: 2vw; height: 2vw;
-    transform: rotate(315deg);
-    right:5vw;
-    top: 80vw;
-}
-.nextslide:hover {
-  border-color: gray;
-}
-.backslide {
-    position: absolute;
-    border-right: 10px solid; 
-    border-bottom: 10px solid;
-    width: 2vw; height: 2vw;
-    transform: rotate(135deg);
-    left:7vw;
-    top: 80vw;
-}
-.backslide:hover {
-  border-color: gray;
-}
 #WordPicContainer {
   position: absolute;
   margin: -40vw 13vw;
@@ -567,3 +542,93 @@ p.pIntro
   color: gray;
   font-size: 1vw;
 }
+
+
+#sideNav
+{
+  border: 1px solid;
+  position: absolute;
+  top:0;
+  width:25vw;
+  height:100vh;
+  background-color: black;
+  display: block;
+  left:-26vw;
+}
+
+/*already have hover need to add navigation bat*/
+#sideNav
+{
+  position: absolute;
+  top:0;
+  width:25vw;
+  height:100vh;
+  background-color: black;
+  display: block;
+  left:-26vw;
+  z-index: 50;
+}
+
+
+#mylogo {
+   display: block;
+   position: absolute;
+   width: 5vw;
+   height:5vw;
+   left:4vw; 
+   top: 5vh;
+   background-size: 5vw 5vw;
+   background-image: url('../img/logo.png');
+   background-repeat: no-repeat;
+   z-index: 100;
+}
+
+#mylogo:hover {
+  background-image: url('../img/logo1.png');
+  background-repeat: no-repeat;
+  z-index: 1001;
+}
+#sideNav:hover {
+  position: fixed;
+  left:0;
+  z-index: 1000;
+}
+#mylogo:hover + #sideNav{
+  left:0;
+}
+
+.sidebar {
+  list-style-type:none;
+  text-align:left;
+  position: absolute;
+  margin: 30% 27%;
+  padding: 0;
+  list-style: none;
+  transition:1s ease;
+}
+
+.sidebar a {
+  text-decoration:none;
+  color:white;
+  transition:1s ease;
+}
+
+.sidebar li {
+  line-height: 5vw;
+  transition:0.5s ease;
+}
+
+.sidebar li:hover {
+  cursor:pointer;
+  text-indent: 2vw;
+}
+.sidebar > .sidebrand
+{
+  text-indent: -2vw;
+  font-size: 2.5vw;
+}
+/*.sidebar > .sidebar-brand {
+height: 65px;
+font-size: 18px;
+line-height: 60px;
+}*/

@@ -67,7 +67,7 @@ var sceneDesc = new ScrollMagic.Scene({
 
 var scencework = new ScrollMagic.Scene({
     triggerElement: "#MyWorkTitle",
-    duration:1000
+    duration:700
   })
   // .addIndicators() 
   .setPin("#MyWorkTitle")
