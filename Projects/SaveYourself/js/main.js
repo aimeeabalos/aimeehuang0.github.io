@@ -133,6 +133,11 @@ function draw() {
   background(242,242,242);
   airBalloon.move(NORTH,SOUTH,WEST,EAST);
   airBalloon.display();
+
+  if (ax >= 0    && gamma <0 )   WEST  = true; //left
+  else if (ax >=0    && gamma >=0)   EAST  = true; //right
+  else if (beta > 100 )  NORTH = true; //up 
+  else if (beta < 100 )  SOUTH = true; //down 
 }
 
 function keyPressed() {
@@ -143,13 +148,6 @@ function keyPressed() {
   else if (k == '40'  | k == 'S')   SOUTH = true;
   else if (k == '37'  | k == 'A')   WEST  = true;
   else if (k == '39' | k == 'D')   EAST  = true;
-
-  if (ax >= 0    && gamma <0 )   WEST  = true; //left
-  else if (ax >=0    && gamma >=0)   EAST  = true; //right
-  else if (beta > 100 )  NORTH = true; //up 
-  else if (beta < 100 )  SOUTH = true; //down 
-
-  
 }
 
 function keyReleased() {
@@ -159,7 +157,6 @@ function keyReleased() {
   else if (k == '40'  | k == 'S')   SOUTH = false;
   else if (k == '37'  | k == 'A')   WEST  = false;
   else if (k == '39' | k == 'D')   EAST  = false;
-
 }
 
 //Class for character
