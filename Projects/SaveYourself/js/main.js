@@ -9,6 +9,7 @@ var posyspeed = 0;
 var airBalloon;
 var NORTH=false,SOUTH=false,EAST=false,WEST=false;
 var charImage;
+const charURL = 'http:/' + '/www.http://aimemee.com/Projects/SaveYourself/img/Balloon.png';
 
 // Position Variables
 var x = 0;
@@ -167,6 +168,8 @@ function Char()
   this.display = function()
   {
   	ellipse(this.posx+this.posxspeed, this.posy+this.posyspeed,30);
-  	charImage = loadImage("img/Balloon.png");
+  	charImage = loadImage("http://aimemee.com/Projects/SaveYourself/img/Balloon.png");
+  	//charImage = createImage(charURL);
+  	image(charImage,this.posx+this.posxspeed,this.posy+this.posyspeed);
   }
 }
