@@ -176,19 +176,18 @@ function Char()
   // move method
   this.move = function()
   {
-    if (beta >= 100 )  {
+  	if(this.posy < height-130)
+    	this.posy ++; //gravity
+   
+    if (beta > 93 )  { //go up
     	if(this.posy > 0)
     	this.posy -= this.posyspeed;
     }
-    if (beta < 100)  {
-    	if(this.posy < height-130)
-    	this.posy += this.posyspeed;
-    }
-    if (ax >= 0    && gamma <0)   {
+    if ((ax > 0  && gamma <0 && beta<93)||(ax > 0  && gamma >0 && beta>93))   { //left
     	if(this.posx > 0)
     	this.posx -= this.posxspeed;
     }
-    if (ax >=0    && gamma >=0)   {
+    if ((ax > 0  && gamma >0 && beta<93)||(ax > 0  && gamma <0 && beta>93))   {
     	if(this.posx < width-130)
     	this.posx += this.posxspeed;
     }
