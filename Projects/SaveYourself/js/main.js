@@ -134,14 +134,14 @@ function draw() {
   airBalloon.move(NORTH,SOUTH,WEST,EAST);
   airBalloon.display();
 
-  text("X:",40,40);
-  text(ax,200,40);
-  text("Y:",40,70);
-  text(ay,200,70);
-  text("gamma:",40,100);
-  text(gamma,200,100);
-  text("beta:",40,130);
-  text(beta,200,130);
+  // text("X:",40,40);
+  // text(ax,200,40);
+  // text("Y:",40,70);
+  // text(ay,200,70);
+  // text("gamma:",40,100);
+  // text(gamma,200,100);
+  // text("beta:",40,130);
+  // text(beta,200,130);
 }
 
 function keyPressed() {
