@@ -123,7 +123,7 @@ function loadImageErrorOverride(errEvt) {
 
 
 function setup() {
-  var myCanvas = createCanvas(350,667);
+  var myCanvas = createCanvas(350,567);
   myCanvas.parent('forp5');
   airBalloon = new Char();
   // alert("wee");
@@ -168,8 +168,8 @@ function Char()
 {
   this.posx = 0;
   this.posy = 150;
-  this.posxspeed = 10;
-  this.posyspeed = 10;
+  this.posxspeed = 2;
+  this.posyspeed = 2;
   charImage = loadImage(charURL);
   
   //loadImage("img/Balloon.png");
