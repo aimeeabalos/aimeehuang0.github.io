@@ -143,6 +143,12 @@ function keyPressed() {
   else if (k == '40'  | k == 'S')   SOUTH = true;
   else if (k == '37'  | k == 'A')   WEST  = true;
   else if (k == '39' | k == 'D')   EAST  = true;
+
+  if (ax >= 0    && gamma <0 )   WEST  = true; //left
+  else if (ax >=0    && gamma >=0)   EAST  = true; //right
+  else if (beta > 100 )  NORTH = true; //up 
+  else if (beta < 100 )  SOUTH = true; //down 
+
   
 }
 
@@ -166,14 +172,25 @@ function Char()
   charImage = loadImage(charURL);
   
   //loadImage("img/Balloon.png");
- 
   // move method
   this.move = function()
   {
-    if (NORTH)  this.posy -= this.posyspeed;
-    if (SOUTH)  this.posy += this.posyspeed;
-    if (WEST)   this.posx -= this.posxspeed;
-    if (EAST)   this.posx += this.posxspeed;
+    if (NORTH)  {
+    	if(this.posy > 0)
+    	this.posy -= this.posyspeed;
+    }
+    if (SOUTH)  {
+    	if(this.posy < height-130)
+    	this.posy += this.posyspeed;
+    }
+    if (WEST)   {
+    	if(this.posx > 0)
+    	this.posx -= this.posxspeed;
+    }
+    if (EAST)   {
+    	if(this.posx < width-130)
+    	this.posx += this.posxspeed;
+    }
   }
   this.display = function()
   {
