@@ -134,10 +134,14 @@ function draw() {
   airBalloon.move(NORTH,SOUTH,WEST,EAST);
   airBalloon.display();
 
-  if (ax >= 0    && gamma <0 )   WEST  = true; //left
-  else if (ax >=0    && gamma >=0)   EAST  = true; //right
-  else if (beta > 100 )  NORTH = true; //up 
-  else if (beta < 100 )  SOUTH = true; //down 
+  text("X:",40,40);
+  text(ax,200,40);
+  text("Y:",40,70);
+  text(ay,200,70);
+  text("gamma:",40,100);
+  text(gamma,200,100);
+  text("beta:",40,130);
+  text(beta,200,130);
 }
 
 function keyPressed() {
@@ -172,19 +176,19 @@ function Char()
   // move method
   this.move = function()
   {
-    if (NORTH)  {
+    if (beta >= 100 )  {
     	if(this.posy > 0)
     	this.posy -= this.posyspeed;
     }
-    if (SOUTH)  {
+    if (beta < 100)  {
     	if(this.posy < height-130)
     	this.posy += this.posyspeed;
     }
-    if (WEST)   {
+    if (ax >= 0    && gamma <0)   {
     	if(this.posx > 0)
     	this.posx -= this.posxspeed;
     }
-    if (EAST)   {
+    if (ax >=0    && gamma >=0)   {
     	if(this.posx < width-130)
     	this.posx += this.posxspeed;
     }
