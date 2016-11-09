@@ -9,7 +9,7 @@ var posyspeed = 0;
 var airBalloon;
 var NORTH=false,SOUTH=false,EAST=false,WEST=false;
 var charImage;
-const charURL = 'http:/' + '/www.http://aimemee.com/Projects/SaveYourself/img/Balloon.png';
+const charURL = 'http:' + '//aimemee.com/Projects/SaveYourself/img/Balloon.png';
 
 // Position Variables
 var x = 0;
@@ -112,6 +112,15 @@ setInterval(function() {
 }, delay);
 } 
 
+function loadImageErrorOverride(errEvt) {
+  const pic = errEvt.target;
+ 
+  if (!pic.crossOrigin)  return print('Failed to reload ' + pic.src + '!');
+ 
+  print('Attempting to reload it as a tainted image now...');
+  pic.crossOrigin = null, pic.src = pic.src;
+}
+
 
 function setup() {
   var myCanvas = createCanvas(350,667);
@@ -154,6 +163,7 @@ function Char()
   this.posy = 150;
   this.posxspeed = 10;
   this.posyspeed = 10;
+  charImage = loadImage(charURL);
   
   //loadImage("img/Balloon.png");
  
@@ -167,9 +177,12 @@ function Char()
   }
   this.display = function()
   {
-  	ellipse(this.posx+this.posxspeed, this.posy+this.posyspeed,30);
-  	charImage = loadImage("http://aimemee.com/Projects/SaveYourself/img/Balloon.png");
-  	//charImage = createImage(charURL);
+  	strokeWeight(50);
   	image(charImage,this.posx+this.posxspeed,this.posy+this.posyspeed);
+  	// ellipse(this.posx+this.posxspeed, this.posy+this.posyspeed,30);
+  	// charImage = loadImage("img/Balloon.png");
+  	// charImage = createImg(charURL);
+  	//charImage = createImage(charURL);
+  	
   }
 }
