@@ -1,10 +1,9 @@
 body { 
   /*font: .875em/1.618 Helvetica, Sans-serif; */
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Ubuntu', sans-serif;
   height: 500px;
   margin: 0 auto;
+  min-width: 700px;
 }
 img {
     width: 100%;
@@ -68,8 +67,6 @@ article:hover .panel{
     opacity: 0.5;
 }
 .content {
-  font-family: 'Merriweather', serif;
-  font-family: 'Reem Kufi', sans-serif;
   position: absolute;
   left: 48vw;
   top:41vw;
@@ -203,9 +200,6 @@ article:hover .panel{
   margin-left:20%;
   height: auto;
   float: left;
-  font-family: 'Raleway', sans-serif;
- font-family: 'Poppins', sans-serif;
- font-family: 'Libre Baskerville', serif;
 }
 .mainPic img{
  border-bottom: 1px solid;
@@ -236,9 +230,8 @@ article:hover .panel{
   margin-top:10px;
   text-align: center;
   color: grey;
-  font-family: 'Merriweather', serif;
-  font-family: 'Reem Kufi', sans-serif;
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Century Gothic Light', sans-serif;
   font-size: 1.5vw;
 }
 .teamMember
@@ -267,10 +260,7 @@ article:hover .panel{
 }
 .caseHeading
 {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Ubuntu', sans-serif;
-  font-family: 'Merriweather', serif;
-  font-family: 'Eczar', serif;
   text-align: center;
   border-bottom: 1px solid #d3d3d3;
   margin:2vw 2vw 0vw 2vw;
@@ -278,10 +268,7 @@ article:hover .panel{
 }
 .caseSub
 {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Ubuntu', sans-serif;
-  font-family: 'Merriweather', serif;
-  font-family: 'Eczar', serif;
   text-align: center;
   margin:0vw 2vw;
   background-color: black;
@@ -299,7 +286,7 @@ article:hover .panel{
 
 .casePar
 {
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   /*overflow: hidden;*/
   height: 15vw;
   margin: 0px auto;
@@ -419,7 +406,7 @@ p.pIntro
 }
 
 /*Stroke*/
-.tri-down {
+.tri-down2 {
   position: relative;
   padding-bottom: 15px;
   padding-top: 20px;
@@ -430,7 +417,7 @@ p.pIntro
 }
 
 /* Required for Down Triangle */
-.tri-down:before,.tri-down:after {
+.tri-down2:before,.tri-down2:after {
   content: "";
   position: absolute;
   border-style: solid;
@@ -439,7 +426,7 @@ p.pIntro
 }
 
 /* Stroke */
-.tri-down:before {
+.tri-down2:before {
   bottom: -10px;
   left: 18vw;
   border-top-color: black;
