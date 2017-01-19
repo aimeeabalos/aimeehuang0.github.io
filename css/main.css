@@ -112,6 +112,7 @@ a:active {color:#000000;}  /* selected link */
 .sidebar li {
   line-height: 5vw;
   transition:0.5s ease;
+  font-size: 1.5vw;
 }
 
 .sidebar li:hover {
@@ -276,11 +277,11 @@ article#MyIntro{
 }
 .socialPic img{
   width: 3vw;
-  padding: 10px;
+  padding: 1vw;
 }
 .socialPicM img{
   width: 1vw;
-  padding: 10px;
+  padding: 1vw;
 }
 .meContact p{
   width: 20vw;
@@ -292,7 +293,7 @@ article#MyIntro{
   float: left;
 }
 .teamIntro{
-  margin-top:10px;
+  margin-top:1vw;
   text-align: center;
   color: grey;
   font-family: 'Ubuntu', sans-serif;
