@@ -1,3 +1,7 @@
+@media only screen and (max-width:768px)
+{
+
+}
 body { 
     /*font: .875em/1.618 Helvetica, Sans-serif; */
     /*font-family: 'Nunito', sans-serif;*/
@@ -13,6 +17,14 @@ div.clear
 {
   clear: both;
 }
+.contentname{
+	font-size: 1vw
+}
+.contentname:after{
+	content: attr(data-content);
+}
+
+
 img {
     width: 100%;
     height: auto;
@@ -390,7 +402,7 @@ p.pIntro
 
 /* Stroke */
 .tri-down:before {
-  bottom: 18px;
+  bottom: 1vh;
   left: 13vw;
   border-top-color: black;
   border-width: 10px;

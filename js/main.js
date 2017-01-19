@@ -1,4 +1,7 @@
 var winheight =  $(window).height();
+var winheight1 =  $(window).height()*0.70;
+var winheight2 =  $(window).height()*0.33;
+
 
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
@@ -14,7 +17,7 @@ var tweenForAimee = new TimelineMax()
         ease: Back.ease
       }),
       TweenMax.to(".scroll-name div", 2, {
-        y: -500,
+        y: '-500vh',
         ease: Back.ease
       })
    ]);
@@ -30,7 +33,7 @@ var sceneHi = new ScrollMagic.Scene({
 
 var picUp = new ScrollMagic.Scene({
   triggerElement: "#MyProject", // point of execution
-  duration: $(window).height()*0.69, // pin element for the window height - 1
+  duration: winheight1+'vh', // pin element for the window height - 1
   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
 })
 // .addIndicators() 
@@ -43,7 +46,7 @@ var twinDesc = new TimelineMax()
         y: 0,
       }),
       TweenMax.to(".caseIntro", 1, {
-        y: winheight*0.33,
+        y: winheight2 + 'vh',
       })
    ]);
 
