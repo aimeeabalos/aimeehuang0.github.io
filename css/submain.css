@@ -1,0 +1,152 @@
+/*
+timeline modified based on 
+http://tympanus.net/codrops/2013/10/25/split-layout/*/
+.panel{
+	height:auto;
+}
+
+/*Stroke*/
+.tri-down2 {
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  /*border-bottom: 2px solid black;*/
+  background: white;
+  font-size: 500%;
+  text-align: center;
+  z-index: -100;
+}
+
+.timeLine {
+	margin: 50px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+} 
+
+/* The line */
+.timeLine:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background: black;
+	left: 20%;
+	margin-left: -10px;
+}
+
+.tmlineDT{
+	display: block;
+	width: 20%;
+	position: absolute;
+	font-size: 20px;
+	color: black;
+	padding-left: 7%;
+}
+
+/* Right content */
+.timeBox {
+	margin: 0 10% 15px 25%;
+	/*background: black;
+	color: #fff;*/
+	padding: 2em;
+	/*font-family: 'Helvetica', sans-serif;*/
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	border:none;
+	background: white;
+	color: black;
+}
+
+.timeLine > li .timeBox h2 { 
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(0,0,0,1);
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 50%;
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -19px;
+}
+.teamMember
+{
+  width: 49vw;
+  margin:6% 0%;
+  margin-left: 3%;
+  float: left;
+}
+
+.teamIntro{
+  margin-top:10px;
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+}
+
+.teamContact img{
+
+  width: 8vw;
+  padding-bottom: 1%;
+  padding-right: 2%;
+}
+.socialPicM img{
+  width: 2vw;
+}
+
+/*for Up*/
+	#ScreenshotPic{
+		margin:5vw;
+	}
+	#ScreenshotPic img{
+	  width: 24%;
+	  float: left;
+	}
+
+/*Video*/
+	#mockupBG{
+		position: absolute;
+		width: 50%;
+		z-index: -10;
+	}
+	#demoVid{
+		width:12%;
+		margin: 15% 20.7%;
+	}
+
+	#bgvid { 
+	    position: relative;
+	    width: 60%;
+	    margin-left: -10%;
+	    height: auto;
+	}
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.timeLine > li .tmlineDT{
+		font-size: 1em;
+	}
+	.timeLine:before,.circle {
+		display: none;
+	}
+	.timeBox {
+		margin: 0 auto;
+		padding: 1em;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+
+}
