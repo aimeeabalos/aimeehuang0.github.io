@@ -127,7 +127,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	#bgvid { 
 	    position: relative;
 	    width: 60%;
-	    margin-left: -10%;
+	    margin:5% 20%;
 	    height: auto;
 	}
 
