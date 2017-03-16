@@ -1,242 +1,326 @@
 <!DOCTYPE html>
 <html >
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
     <title>A I "&" Me</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"></head>    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+     
+     <style>
+        @media all and (max-width: 35em) {
+            .my-breakpoint .ui-block-a,
+            .my-breakpoint .ui-block-b,
+            .my-breakpoint .ui-block-c,
+            .my-breakpoint .ui-block-d,
+            .my-breakpoint .ui-block-e {
+              width: 100%;
+              float:none;
+              min-height: 300px;
+            }
+            .ui-block-b,.ui-body,.ui-body-b {
+                min-height: 300px;
+            }
+            #MyProject
+            {
+              height:1200px;
+            }
+            #AllWork
+            {
+                height: 3400px;
+            }
+            .listcontent{
+              font-size: 2.6vw;
+            }
+            .caseIntro{
+              font-size: 12px;
+            }
+            /*Button*/
+    
+              button{
+                padding: 20px;
+              }
+              .button-two{
+                margin: 0 0 0 19vw; /*100px*/
+              }
+              /*Button Two*/
+              .button-two {
+                border-radius: 4px;
+                background-color:white;
+                border: 1px solid;
+                border-color: black;
+                color: black;
+                padding: 10px;
+                width: 50vw;
+                transition: all 0.5s;
+                font-size: 12px;
+              }
+              .button-two span:after {
+                right: -10px;
+              }
+                .button-two:hover span {
+                color:white;
+                padding-right: 10px;
+              }
+              .image{
+                margin-left: 10vw;
+              }
+              .mainPic{
+                display: none;
+              }
+              .meContact
+              {
+                width:100%;
+                margin:20% 0%;
+              }
+              .meContact p {
+                width:100%;
+                font-size:30px;
+                margin-right:0%;
+                margin-left:0%;
+              }
+              .meContact .pIntro {
+                width:100%;
+                font-size:12px;
+              }
+               .aboutMeContainer
+                {
+                  width: 100%;
+                  margin:5% 0% 0% 0%;
+                  margin-left: 2%;
+                  height: auto;
+                  float: left;
+                }
+
+                .aboutMeContainer p
+                {
+                  color: grey;
+                  font-size: 12px;
+                }
+                .socialPic{
+                    margin-left: 20vw;
+                }
+                .socialPic img{
+                  width: 40px;
+                  padding: 4px;
+                }
+        }
+	  </style>
 </head>
 
 <body>
-    <div id="content-wrapper">
-        <section>
-            <a href="#MyLink" id="mylogo" title="My Logo link"></a>
-            <div id="sideNav">
-                <ul class="sidebar">
-                  <li class="sidebrand"><a href="index.html">Home</a></li>
-                  <li class="sidebrand"><a href="#MyProject">Project</a></li>
-                  <li><a href="Alivio.html">ALIVIO</a></li>
-                  <li><a href="HIS.html">MANILA General</a></li>
-                  <li><a href="CIS.html">MEDICAL X</a></li>
-                  <li class="sidebrand"><a href="#MyWorkTitle">Works</a></li>
-                  <li class="sidebrand"><a href="#MyTeam">Contact</a></li>
+   <a href="#MyLink" id="mylogo" title="My Logo link"></a>
+   <nav id="sideNav">
+		<h2>Home</h2>
+		<ul>
+			<li><a href="#MyProject">My Projects</a></li>
+			<li><a href="Alivio.html">ALIVIO</a></li>
+			<li><a href="HIS.html">MANILA General</a></li>
+			<li><a href="CIS.html">MEDICAL X</a></li>
+			<li><a href="#MyWorkTitle">My Work</a></li>
+			<li><a href="#MyTeam">Contact Me</a></li>
+		</ul>
+	</nav>
+
+    <article class="panel" id="MyIntro">
+        <div class="MyName">
+          <div id="name" class="scroll-name">
+            <div id="name-txt">A  I  M  E  E</div>
+          </div>
+        </div>
+        <div class="listcontent"> 
+                <ul>                
+                    <li>a Developer</li>
+                    <li>an Engineer</li>
+                    <li>a Designer</li>
+                    <li>a Traveler</li>
+                    <li>an Idealist</li>
                 </ul>
-            </div> 
-            <article class="panel" id="MyIntro"> <!--id="h1pin"-->
-                <div class="MyName">
-                  <div id="name" class="scroll-name">
-                    <div id="name-txt">A  I  M  E  E</div>
-                  </div>
-                </div>
-                <div class="content"> 
-                        <ul>                
-                            <li>a Developer</li>
-                            <li>an Engineer</li>
-                            <li>a Designer</li>
-                            <li>a Traveler</li>
-                            <li>a Dreamer</li>
-                        </ul>
-                        <p style="color:#c1c1c1;">aiming to change the world</p>
-                </div> 
+                <p style="color:#c1c1c1;">aiming to change the world</p>
+        </div> 
+    </article>
 
-                
-            </article>
+    <article class="panel" id="MyProject">
+        <div id="AllProject">
+            <div class="tri-down">MY PROJECT &#xbb;</div>
+            	<div class="ui-grid-b my-breakpoint">
+            		<div class="ui-block-b"><div class="ui-body ui-body-d">
+            		<div class="workIMG">
+            			<div class="caseHeading" style="z-index: 50"><a href="Alivio.html" target="_blank">Alivio</a></div> 
+            			<!-- <a href="Alivio.html"></a> -->
+                        <div class="caseSub">CBDRMS</div>
+                        <div class="caseIntro">
+                            <p>A <b>C</b>ommunity-<b>B</b>ased <b>D</b>isaster <b>R</b>elief <b>M</b>anagement <b>S</b>ystem approach that helps communities maximize all their resources efficiently and help out more affected areas and victims. </p>
+                        </div>
 
-            <article class="panel" id="MyProject">
-                <div id="AllProject">
-                    <div class="tri-down">MY PROJECT</div>
-                    	<div style="height:98vh;margin-left:3vw;">
-                    		<div class="workIMG">
-                    			<div class="caseHeading" style="z-index: 50"><a href="Alivio.html" target="_blank">Alivio</a></div>   
-                    			<!-- <a href="Alivio.html"></a> -->
-	                            <div class="caseSub">CBDRMS</div>
-	                            <div class="caseIntro">
-	                                <p>A <b>C</b>ommunity-<b>B</b>ased <b>D</b>isaster <b>R</b>elief <b>M</b>anagement <b>S</b>ystem approach that helps communities maximize all their resources efficiently and help out more affected areas and victims. </p>
-	                            </div>
-                    		</div>
-                    	
-	                    	<div class="workIMG">
-	                            <div class="caseHeading" style="z-index: 50"><a href="HIS.html" target="_blank">MNL General</a></div>     
-	                                               
-	                            <div class="caseSub">HIS</div>
-	                            <div class="caseIntro">
-	                                <p>A <b>H</b>ospital <b>I</b>nformation <b>S</b>ystem that is designed to manage the different aspects of information in terms of its' clinical, financial and operational management</p>
-	                            </div>
-	                        </div>
+                        <a href="Alivio.html" target="_blank"><button class="button-two"><span>View Case</span></button></a>
+            		</div>
+            		</div></div>
 
-	                        <div class="workIMG">
-                            <div class="caseHeading" style="z-index: 50"><a href="CIS.html" target="_blank">Medical</a></div>  
-                            <div class="caseSub">CIS</div>
-                            <div class="caseIntro">
-                                <p>A <b>C</b>linical <b>I</b>nformation <b>S</b>ystem maximizes the utilization of patient information for medical care  </p>
-                            </div>
-                            </div>
+            		<div class="ui-block-b"><div class="ui-body ui-body-d">
+                	<div class="workIMG">
+                        <div class="caseHeading" style="z-index: 50"><a href="HIS.html" target="_blank">MNL General</a></div>     
+                                           
+                        <div class="caseSub">HIS</div>
+                        <div class="caseIntro">
+                            <p>A <b>H</b>ospital <b>I</b>nformation <b>S</b>ystem that is designed to manage the different aspects of information in terms of its' clinical, financial and operational management</p>
                         </div>
-                    </div>        
-            </article>
-            <article class="panel" id="MyProjectPic">
-                <div style="height:40vh;margin-left:3vw;margin-top:3vh;">
-                    		<div class="workIMG"><a href="Alivio.html" target="_blank"><img src="img/AlivioMain.png"></a></div>
-                    	
-	                    	<div class="workIMG"><a href="HIS.html" target="_blank"><img src="img/HISMain.png"></a></div>
-
-	                        <div class="workIMG"><a href="CIS.html" target="_blank"><img src="img/CISMain.png"></a></div>
-                        </div>
-                    </div>       
-            </article>
-
-            <div class="clear"></div>
-
-            <article class="panel" id="MyWorkTitle" style="z-index: 100" >
-                <div id="WorkTitle" class="tri-down">MY WORKS</div>
-            </article>
-
-            <article class="panel" id="MyWork">
-                <div id="AllWork">
-                    <div class="workgroup section group">
-                        <div data-content="Up" class="col span_1_of_4 image contentname">
-                            <a href="Projects/WhatisBeyond/index.html" target="_blank">
-                                <div id="Up"><br><br><br>
-                                    <a href="sub/Up.html" target="_blank">
-                                    <img src="img/Up.gif" style="width:21vw;height: 21vw;"  alt="" />
-                                    </a>
-                                </div>    
-                            </a>
-                        </div>
-                        <div data-content="Look Beyond" class="col span_1_of_4 image contentname">
-                            <a href="Projects/WhatisBeyond/index.html" target="_blank">
-                                <div id="whatsBeyond"><br><br><br>
-                                    What's Out<br> There?
-                                </div>    
-                            </a>
-                        </div>
-                        <div data-content="Void" class="col span_1_of_4 image contentname">
-                            <a href="Projects/Void/Void.html" target="_blank">
-                                <div id="void"> 
-                                    <div class="circle"></div>
-                                    <div class="circle1"></div>
-                                    <div class="circle2"></div>
-                                    <div class="circle3"></div>    
-                                </div>
-                            </a>
-                        </div>
-                        <div data-content="Bubble World" class="col span_1_of_4 image contentname">
-                            <a href="Projects/BubbleMe/index.html" target="_blank">
-                                <div id="bubble"> 
-                                    <div class="sCircle s1"></div>
-                                    <div class="sCircle s2"></div>
-                                    <div class="sCircle s3"></div>
-                                    <div class="sCircle s4"></div>    
-                                </div>
-                            </a>
-                        </div>
-                        <div data-content="Information Filter" class="col span_1_of_4 image contentname">
-                            <a href="Projects/Press/index.html" target="_blank">
-                                <div id="glass">
-                                  <div class="mCircle"></div>
-                                  <div class="handle"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div data-content="URBAN" class="col span_1_of_4 image contentname">
-                            <a href="sub/Typo.html" target="_blank">
-                            <img src="img/URBAN.jpg" style="width:21vw;height: 21vw;"  alt="" />
-                            </a>
-                        </div>
-                        <div data-content="A I & Me" class="col span_1_of_4 image contentname">
-                            <img src="img/Typo.jpg" style="width:21vw;height: 21vw;" alt="" />
-                        </div>
-                        <div data-content="A I & Me" class="col span_1_of_4 image contentname">
-                            <img src="img/Self-Intro.jpg" style="width:21vw;height: 21vw;" alt="" />
-                        </div>
-                        <div data-content="Black Swan" class="col span_1_of_4 image contentname">
-                            <a href="sub/Pic.html" target="_blank">
-                            <img src="img/Rippled Swan.jpg" style="width:21vw;height: 21vw;"  alt="" />
-                            </a>
-                        </div>
-                        <div data-content="Lost in Series" class="col span_1_of_4 image contentname">
-                            <a href="sub/lostin.html" target="_blank">
-                            <div id="lostin">
-                            <img src="img/AimeeSign.png" style="width:12vw;height: 8vw;margin: 23%"  alt="" />
-                            </div>
-                            </a>
-                        </div>
-                        <!-- <div data-content="Here is a caption" class="col span_1_of_4 image">
-                            <img src="img/PolarBear.jpg" style="width:21vw;height: 21vw;" alt="" />
-                        </div> -->
+                        <a href="HIS.html" target="_blank"><button class="button-two"><span>View Case</span></button></a>
                     </div>
-                </div>
-            </article>
+                    </div></div>
 
-            <div class="clear"></div>
-            <article class="panel" id="MyTeam"> <!--id="unpin"-->
-                <div class="tri-down tridownMove">ABOUT ME<br></div>
-
-                <div class="teamBox">
-                    <div class="meContact">
-                        <div class="mainPic"><img  src="img/Panda.jpg"></div>
-                            <p>Aimee Abalos</p>
-                            <p style="color:gray;font-size:1vw;">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"</p>
-                            <p style="color:gray"></p>
-                        <div class="socialPic">
-                        <a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook.png"></a>
-                        <a href="https://www.instagram.com/aimmemee/"><img src="icon/ins.png"></a>
-                        <a href="https://www.linkedin.com/in/aimee-abalos-b72a21b5?authType=NAME_SEARCH&authToken=tN2S&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A411612998%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1470576542699%2Ctas%3Aaimee%20abalos"><img src="icon/linkedin.png"></a>
-                        <a href="https://twitter.com/huangwanshang"><img src="icon/twitter.png"></a>
+                    <div class="ui-block-b"><div class="ui-body ui-body-d">
+                    <div class="workIMG">
+                    <div class="caseHeading" style="z-index: 50"><a href="CIS.html" target="_blank">Medical</a></div>  
+                    <div class="caseSub">CIS</div>
+                        <div class="caseIntro">
+                            <p>A <b>C</b>linical <b>I</b>nformation <b>S</b>ystem maximizes the utilization of patient information for medical care  </p>
                         </div>
+                        <a href="CIS.html" target="_blank"><button class="button-two"><span>View Case</span></button></a>
                     </div>
-                    <div class="aboutMeContainer">
-                    	
-                        <div class="aboutMeContent">
-                            <!-- <p>
-                                Academics
-                            </p>
-                            <p class="pIntro">
-                                An IT professional graduated from De La Salle University in Philippines. Then went to China as a visiting student studying Business Management at the same time learning Chinese Language. Now, She is a Design and Technology graduate  at Parsons School of Design.
-                            </p> -->
-                            <p class="pIntro">
-                                Aimee Abalos us a current graduate Design and Technology student at Parsons School of Design. She believes the best education is through exploration, therefore before deciding to become a designer, she dove into different categories such as economics, psychology and entrepreneurship management and computer engineering. During her undergraduate studies as an IT student, she partners with Philippine government and non-profit organizations providing services with all her skills to help them improve their business process services for free.
-                                <br>
-                                <br>
-                                After graduating with Information System undergraduate degree, she went into an IT company to pursue her interest in software and hardware skills because she understand learning technology can be a powerful tool for solving the problem in the society. During her spare time, she travels to appreciate the beautiful nature around the world. She also learned to become independent and accepted the diversified cultures in different countries.
-                                <br>
-                                <br>
-                                Aimee decided to become a designer to deeper her commitment to craft solutions to different society issues. With all these experience, she builds her values on using her knowledge and skills on technology and design it in the way of what she believes in
-                            </p>
-                        </div>
-                        <div class="clear"></div>
-                        <!-- <div class="aboutMeContent">
-                            <p>
-                                Work Experience
-                            </p>
-                            <p class="pIntro">
-                                1 year working experience as an IT engineer working with software & hardware configuration and customer relationship.
-                            </p>
-                        </div> -->
-                        <!-- <div class="aboutMeContent">
-                            <p>
-                                A Few Things About Me
-                            </p>
-                            <p class="pIntro">
-                                I like <br>
-                                Technology, Design, Travel, Food, Breakfast, Hiking, Walking, Diverse culture, Nature, Philosophy, Panda
-                            </p>
-                        </div> -->
-                    </div>
-                </div>
-            </article>
-            <div class="clear"></div>
-            <footer id="footer" class="fixed_footer">
-                <p>
-                    Aimee Abalos
-                </p>
-                <p>
-                    (c)Copyright 2013 - 2016
-                </p>
-            </footer>
+                    </div></div>
 
-        </section>
-    </div>
+                </div>
+            </div>        
+    </article>
+
+    <div class="clear"></div>
+
+    <article class="panel" id="MyWorkTitle" style="z-index: 100;">
+        <div class="tri-down">MY WORK &#xbb;</div>
+    </article>
+
+    <div class="clear"></div>
+
+   <article class="panel" id="MyWork">
+        <div id="AllWork">
+                <div class="image">
+                    <a href="sub/Up.html" target="_blank">
+                    <img src="img/Up3.gif" style="" alt="" />
+                    </a>
+                    <p>Up<br>IOS Game Application</p>
+                </div>
+                <div class="image">
+                    <a href="https://www.behance.net/gallery/49406493/FANERNA(Grand-Prize)-Getting-fans-back-to-the-stadium" target="_blank">
+                        <div id="fanrena"><br><br><br><br><br><br><br>
+                            FANRENA<br>
+                            <span>Inviting fans to the stadium</span>
+                        </div>    
+                    </a>
+                    <p>MLBAM Hackathon<br>Grand Prize</p>
+                </div>
+                <div class="image">
+                    <a href="https://www.behance.net/gallery/48532703/UNCERTIME-how-should-time-be-measured?sso_inbound=1#" target="_blank">
+                        <div id="uncertime"><br><br><br><br><br><br><br>
+                            UNCERTIME<br>
+                            <span>How should time be measured?</span>
+                        </div>    
+                    </a>
+                    <p>What you know<br>is a lie</p>
+                </div>
+                <div class="image">
+                    <a href="https://www.misungkim.work/trawl/" target="_blank">
+                        <div id="trawl"><br><br><br><br><br><br><br>
+                            TRAWLS<br>
+                            <span>Time for some ocean cleaning</span>
+                        </div>    
+                    </a>
+                    <p>Featured in<br>Instructable</p>
+                </div>
+                <div class="image">
+                    <a href="Projects/WhatisBeyond/index.html" target="_blank">
+                        <div id="whatsBeyond"><br><br><br>
+                            What's Out<br> There?
+                        </div>    
+                    </a>
+                    <p>Explore & Look Beyond</p>
+                </div>
+                 <div class="image">
+                    <a href="Projects/Void/Void.html" target="_blank">
+                        <div id="void"> 
+                            <div class="circle"></div>
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>    
+                        </div>
+                    </a>
+                    <p>Keep Calm & Meditate</p>
+                </div>
+                 <div class="image">
+                    <a href="Projects/BubbleMe/index.html" target="_blank">
+                        <div id="bubble"> 
+                            <div class="sCircle s1"></div>
+                            <div class="sCircle s2"></div>
+                            <div class="sCircle s3"></div>
+                            <div class="sCircle s4"></div>    
+                        </div>
+                    </a>
+                    <p>Stressed? Pop the Bubbles</p>
+                </div>
+                 <div class="image">
+                    <a href="Projects/Press/index.html" target="_blank">
+                        <div id="glass">
+                          <div class="mCircle"></div>
+                          <div class="handle"></div>
+                        </div>
+                    </a>
+                    <p>Information Overload</p>
+                </div>
+                <div class="image">
+                    <img src="img/Typo.jpg" alt="" />
+                </div>
+                 <div class="image">
+                    <a href="sub/lostin.html" target="_blank">
+                        <div id="lostin">
+                        <img src="img/AimeeSign.png" style="position:relative;top:80px;left:60px;width: 150px;height: auto;" alt="" />
+                        </div>
+                    </a>
+                    <p>Traveler's Wanderlust</p>
+                </div>
+            </div>
+    </article>
+
+    <div class="clear"></div>
+        
+    <article class="panel" id="MyTeam"> <!--id="unpin"-->
+        <div class="tri-down">ABOUT ME &#xbb;<br></div>
+
+        <div class="teamBox">
+            <div class="meContact">
+                <div class="mainPic"><img  src="img/Panda.jpg"></div>
+                    <p>Aimee Abalos</p>
+                    <p class="pIntro">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"</p>
+                <div class="socialPic">
+                    <a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook.png"></a>
+                    <a href="https://www.instagram.com/aimmemee/"><img src="icon/ins.png"></a>
+                    <a href="https://www.linkedin.com/in/aimee-abalos-b72a21b5?authType=NAME_SEARCH&authToken=tN2S&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A411612998%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1470576542699%2Ctas%3Aaimee%20abalos"><img src="icon/linkedin.png"></a>
+                    <a href="https://twitter.com/huangwanshang"><img src="icon/twitter.png"></a>
+                </div>
+            </div>
+            <div class="aboutMeContainer">
+                    <p >
+                        Aimee Abalos us a current graduate Design and Technology student at Parsons School of Design. She believes the best education is through exploration, therefore before deciding to become a designer, she dove into different categories such as economics, psychology, entrepreneurship, management and computer engineering. During her undergraduate studies as an IT student, she partners with Philippine government and non-profit organizations providing services with all her skills to help them improve their business process services for free.
+                        <br>
+                        <br>
+                        After graduating with Information System undergraduate degree, she went into an IT company to pursue her interest in software and hardware skills because she understand learning technology can be a powerful tool for solving the problem in the society. During her spare time, she travels to appreciate the beautiful nature around the world. She also learned to become independent and accepted the diversified cultures in different countries.
+                        <br>
+                        <br>
+                        Aimee decided to become a designer to deeper her commitment to craft solutions to different society issues. With all these experience, she builds her values on using her knowledge and skills on technology and design it in the way of what she believes in.
+                    </p>
+            </div>
+        </div>
+    </article>
+
+        <div class="clear"></div>
+        <footer id="footer" >
+            <p>
+                (c)Copyright 2013 - 2017 by Aimee Abalos
+                <br>
+                <a href="https://github.com/aimeehuang0">https://github.com/aimeehuang0</a>
+            </p>
+        </footer>
+
 </body>
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     

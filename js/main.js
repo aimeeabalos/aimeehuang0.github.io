@@ -31,32 +31,32 @@ var sceneHi = new ScrollMagic.Scene({
   .addTo(controller);
 
 
-var picUp = new ScrollMagic.Scene({
-  triggerElement: "#MyProject", // point of execution
-  duration: winheight1+'vh', // pin element for the window height - 1
-  triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
-})
-// .addIndicators() 
-.setPin("#AllProject")
-.addTo(controller); // the element we want to pin
+// var picUp = new ScrollMagic.Scene({
+//   triggerElement: "#MyProject", // point of execution
+//   duration: winheight1+'vh', // pin element for the window height - 1
+//   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+// })
+// // .addIndicators() 
+// .setPin("#AllProject")
+// .addTo(controller); // the element we want to pin
 
-var twinDesc = new TimelineMax()
-  .add([
-      TweenMax.from(".caseIntro", 1, {
-        y: 0,
-      }),
-      TweenMax.to(".caseIntro", 1, {
-        y: winheight2 + 'vh',
-      })
-   ]);
+// var twinDesc = new TimelineMax()
+//   .add([
+//       TweenMax.from(".caseIntro", 1, {
+//         y: 0,
+//       }),
+//       TweenMax.to(".caseIntro", 1, {
+//         y: winheight2 + 'vh',
+//       })
+//    ]);
 
-var sceneDesc = new ScrollMagic.Scene({
-    triggerElement: "#MyProject",
-    duration: $(window).height()*0.33
-  })
-  // .addIndicators() 
-  .setTween(twinDesc)
-  .addTo(controller);
+// var sceneDesc = new ScrollMagic.Scene({
+//     triggerElement: "#MyProject",
+//     duration: $(window).height()*0.33
+//   })
+//   // .addIndicators() 
+//   .setTween(twinDesc)
+//   .addTo(controller);
 
 // var twinwork = new TimelineMax()
 // .add([
