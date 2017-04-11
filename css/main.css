@@ -574,7 +574,7 @@ p.pIntro
 }
 
 
-#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl{
+#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain{
   width: 270px;
   height: 270px;
   border-bottom: 0.5px solid;
@@ -589,6 +589,16 @@ p.pIntro
   font-family: Georgia, serif;
 }
 #uncertime span{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#chain{
+  font-size: 40px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#chain span{
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
