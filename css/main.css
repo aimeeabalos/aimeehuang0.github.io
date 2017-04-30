@@ -574,7 +574,7 @@ p.pIntro
 }
 
 
-#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain{
+#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive{
   width: 270px;
   height: 270px;
   border-bottom: 0.5px solid;
@@ -617,6 +617,7 @@ p.pIntro
   font-size: 30px;
   text-align: center;
   font-family: "Arial Black", Gadget, sans-serif;
+  padding-top: 40px;
 }
 #fanrena span{
   font-size: 12px;
@@ -672,6 +673,39 @@ p.pIntro
     100% { 
       transform: rotateZ(360deg); 
     }
+  }
+
+  @keyframes spinback { 
+    100% { 
+      transform: rotateZ(-360deg); 
+    }
+  }
+
+  /*Chain Circle*/
+  #chain:hover .ccircle1{
+      animation: spinback 10s linear infinite;
+  }
+  #chain:hover .ccircle2{
+      animation: spin 10s linear infinite;
+  }
+  .ccircle1, .ccircle2{
+    position: absolute;
+    background-color: none;
+    border: 6px dashed black;
+    border-radius: 50%;
+  }
+  .ccircle1{
+    margin: 90px 90px;
+    height: 120px;
+    width: 120px;
+    animation: spin 10s linear infinite;
+  }
+  .ccircle2{
+    margin: 50px 50px;
+    height: 120px;
+    width: 120px;
+    animation-delay: 0.3s;
+    animation: spinback 10s linear infinite;
   }
 
 /*bubble Me*/
