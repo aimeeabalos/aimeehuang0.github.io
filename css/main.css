@@ -580,7 +580,7 @@ p.pIntro
   border-bottom: 0.5px solid;
 }
 #void:hover,#bubble:hover{
-  background-color: black;
+  /*background-color: black;*/
 }
 #uncertime{
   font-size: 30px;
@@ -636,7 +636,58 @@ p.pIntro
   color: white;
 }
 
+
+/*magnify glass for trawls*/
+  #glass:hover{
+    width: 270px;
+    height: 270px;
+  }  
+  #glass:hover .mCircle{
+    animation: magnify 5s linear infinite;
+  }
+  #glass .mCircle {
+    top:50px;
+    left:50px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transform: rotateZ(45deg);
+  }
+
+  #glass .mCircle:after {
+    position: absolute;
+    display: inline;
+    content: " ";
+    left: 145px;
+    top: 70px;
+    width: 40px;
+    border: 3px solid black;
+  }
+  @keyframes magnify { 
+      0% { 
+          transform: rotateZ(45deg);
+      }
+      50% { 
+          transform: rotateZ(70deg);
+      }
+      100% { 
+          transform: rotateZ(45deg);
+      }
+  }
+
 /*Void Circle*/
+#void:hover .circle1{
+  animation: spin 10s linear infinite;
+}
+#void:hover .circle2{
+  animation: spin 10s linear infinite;
+}
+#void:hover .circle3{
+  animation: spin 10s linear infinite;
+}
+
   .circle {
     position: absolute;
     margin: 95px 95px;
@@ -650,7 +701,7 @@ p.pIntro
     background-color: none;
     border: 6px dashed grey;
     border-radius: 50%;
-    animation: spin 10s linear infinite;
+    /*animation: spin 10s linear infinite;*/
   }
   .circle1{
     margin: 75px 75px;
@@ -698,14 +749,14 @@ p.pIntro
     margin: 90px 90px;
     height: 120px;
     width: 120px;
-    animation: spin 10s linear infinite;
+    /*animation: spin 10s linear infinite;*/
   }
   .ccircle2{
     margin: 50px 50px;
     height: 120px;
     width: 120px;
     animation-delay: 0.3s;
-    animation: spinback 10s linear infinite;
+    /*animation: spinback 10s linear infinite;*/
   }
 
 /*bubble Me*/
@@ -753,43 +804,6 @@ p.pIntro
       }
   }
 
-/*magnify glass*/
-  #glass:hover{
-    width: 270px;
-    height: 270px;
-    background-color: rgba(200,200,200,0.5); 
-  }
-  #glass .mCircle {
-    top:50px;
-    left:50px;
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid black;
-    animation: magnify 5s linear infinite;
-  }
-
-  #glass .mCircle:after {
-    position: absolute;
-    display: inline;
-    content: " ";
-    left: 145px;
-    top: 70px;
-    width: 40px;
-    border: 3px solid black;
-  }
-  @keyframes magnify { 
-      0% { 
-          transform: rotateZ(45deg);
-      }
-      50% { 
-          transform: rotateZ(70deg);
-      }
-      100% { 
-          transform: rotateZ(45deg);
-      }
-  }
 
 
 
