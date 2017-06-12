@@ -25,48 +25,10 @@ var tweenForAimee = new TimelineMax()
 var sceneHi = new ScrollMagic.Scene({
     duration: '100%'
   })
-  // .addIndicators() 
   .setTween(tweenForAimee)
   .setPin(".scroll-name")
   .addTo(controller);
 
-
-// var picUp = new ScrollMagic.Scene({
-//   triggerElement: "#MyProject", // point of execution
-//   duration: winheight1+'vh', // pin element for the window height - 1
-//   triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
-// })
-// // .addIndicators() 
-// .setPin("#AllProject")
-// .addTo(controller); // the element we want to pin
-
-// var twinDesc = new TimelineMax()
-//   .add([
-//       TweenMax.from(".caseIntro", 1, {
-//         y: 0,
-//       }),
-//       TweenMax.to(".caseIntro", 1, {
-//         y: winheight2 + 'vh',
-//       })
-//    ]);
-
-// var sceneDesc = new ScrollMagic.Scene({
-//     triggerElement: "#MyProject",
-//     duration: $(window).height()*0.33
-//   })
-//   // .addIndicators() 
-//   .setTween(twinDesc)
-//   .addTo(controller);
-
-// var twinwork = new TimelineMax()
-// .add([
-//     TweenMax.from("#MyWork", 1, {
-//       y: 0,
-//     }),
-//     TweenMax.to("#MyWork", 1, {
-//       y: winheight-1000,
-//     })
-//  ]);
 
 var scencework = new ScrollMagic.Scene({
     triggerElement: "#MyWorkTitle",
@@ -76,10 +38,14 @@ var scencework = new ScrollMagic.Scene({
   .setPin("#MyWorkTitle")
   .addTo(controller);
 
-// var workUp = new ScrollMagic.Scene({
-//   triggerElement: "#MyWorkTitle", // point of execution
-//   duration: $(window).height()*0.33, // pin element for the window height - 1
-// })
-// .addIndicators() 
-// .setPin("#MyWorkTitle")
-// .addTo(controller); // the element we want to pin
+$(document).ready(function () {
+
+  $("#AllWork").find(".featured").addClass("active");
+  $(".nav-bar a").on("click", function() {
+      var searchactive = this.parentNode.id;
+      $(".image").removeClass("active");
+      $(".nav-bar").find(".active").removeClass("active");
+      $(this).parent().addClass("active");
+      $("#AllWork").find("."+searchactive).addClass("active");
+  });
+});

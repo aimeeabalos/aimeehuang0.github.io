@@ -343,6 +343,13 @@ article#MyIntro{
   height: 100vh;
 }
 
+#main-menu .nav-bar { list-style:none; margin-top: -24px; font-size: 13px;}
+#main-menu .nav-bar li { display:inline; padding:0 10px; }
+.nav-bar li.active{
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+}
+
 /* My Name Aimee */
 .MyName
 {
@@ -363,9 +370,9 @@ article#MyIntro{
 
 #name-txt {
   position: absolute;
-  font-size: 18.5vw;
+  font-size: 18.7vw;
   font-weight: 400;
-  top:32%;
+  top:34%;
 }
 
 .listcontent {
@@ -430,6 +437,9 @@ article#MyIntro{
 #AllWork{
   background-color: white;
   padding-top:2%;
+}
+#AllWork .active{
+  display: block;
 }
 #map {
         width: 100%;
@@ -550,7 +560,7 @@ p.pIntro
 .aboutMeContainer p
 {
   color: gray;
-  font-size: 1.3vw;
+  font-size: 1.15vw;
   text-align: justify;
 }
 
@@ -574,7 +584,7 @@ p.pIntro
 }
 
 
-#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive{
+#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive,#Fabry,#majormajor{
   width: 270px;
   height: 270px;
   border-bottom: 0.5px solid;
@@ -582,23 +592,30 @@ p.pIntro
 #void:hover,#bubble:hover{
   /*background-color: black;*/
 }
-#uncertime{
+#chain{
   font-size: 30px;
   line-height: 18px;
   text-align: center;
   font-family: Georgia, serif;
 }
-#uncertime span{
+#chain span{
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#chain{
-  font-size: 40px;
+#Fabry{
+  font-size: 30px;
   line-height: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#majormajor{
+  padding-top: 50px;
+  font-size: 40px;
+  line-height: 25px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-#chain span{
+#majormajor span{
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -676,6 +693,87 @@ p.pIntro
           transform: rotateZ(45deg);
       }
   }
+
+/*UTB*/
+#untouchBox:hover{
+  width: 270px;
+  height: 270px;
+}  
+#untouchBox:hover .mCircle{
+  animation: untouchable 3s linear infinite;
+}
+#prohibit .mCircle {
+  top:75px;
+  left:73px;
+  position: relative;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 5px solid black;
+  transform: rotateZ(45deg);
+}
+
+#prohibit .mCircle:after {
+  position: absolute;
+  display: inline;
+  content: " ";
+  left: 0px;
+  top: 55px;
+  width: 110px;
+  border: 3px solid black;
+}
+@keyframes untouchable { 
+    0% { 
+        transform: rotateZ(45deg);
+    }
+    50% { 
+        transform: rotateZ(70deg);
+    }
+    100% { 
+        transform: rotateZ(45deg);
+    }
+}
+
+/*Uncertime*/
+#uncertime:hover .mCircle:before{
+  transform: rotateZ(45deg);
+  top:65px;
+}
+#uncertime:hover .mCircle:after{
+  transform: rotateZ(135deg);
+  left:35px;
+}
+#uncertime .mCircle {
+    top:60px;
+    left:55px;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transform: rotateZ(90deg);
+}
+#uncertime .mCircle:before {
+  position: absolute;
+  display: inline;
+  content: " ";
+  left: 35px;
+  top: 35px;
+  width: 60px;
+  border: 3px solid black;
+  transform: rotateZ(90deg);
+}
+
+#uncertime .mCircle:after {
+  position: absolute;
+  display: inline;
+  content: " ";
+  left: 5px;
+  top: 65px;
+  width: 60px;
+  border: 3px solid black;
+
+}
 
 /*Void Circle*/
 #void:hover .circle1{
@@ -869,7 +967,7 @@ p.pIntro
   #AllWork {
     z-index: 200;
     width:88%;
-    height: 1000px;
+    height: auto;
     max-width: 1250px;
     margin: 1.5em auto;
     overflow:hidden;
@@ -883,7 +981,7 @@ p.pIntro
       float:left;
       margin: 10px;
       margin-bottom: 40px; 
-
+      display: none;
       /*border: 1px solid;*/
   }
   .image p{

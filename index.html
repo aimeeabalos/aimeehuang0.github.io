@@ -28,7 +28,7 @@
             }
             #AllWork
             {
-                height: 3400px;
+                height: auto;
             }
             .listcontent{
               font-size: 2.6vw;
@@ -105,6 +105,10 @@
                   width: 40px;
                   padding: 4px;
                 }
+                #main-menu{
+                    margin-top: 10%;
+                    text-align: center;
+                }
         }
 	  </style>
 </head>
@@ -144,14 +148,29 @@
     <div class="clear"></div>
 
     <article class="panel" id="MyWorkTitle" style="z-index: 100;">
-        <div class="tri-down">MY WORK &#xbb;</div>
+        <div class="tri-down">
+            MY WORK &#xbb;
+            <div style="text-align: right;width: 88%;">
+            <nav id="main-menu">
+                 <ul class="nav-bar">
+                      <li id="featured" class="nav-featured active"><a href="#MyWorkTitle">Featured</a></li>
+                      <li id="web" class="nav-mobilewebui"><a href="#MyWorkTitle">Web</a></li>
+                      <li id="mobileui" class="nav-mobilewebui"><a href="#MyWorkTitle">Mobile/UI</a></li>
+                      <li id="installation" class="nav-installation"><a href="#MyWorkTitle">Installation</a></li>
+                      <li id="arvr" class="nav-arvr"><a href="#MyWorkTitle">AR/VR</a></li>
+                      <li id="product" class="nav-product"><a href="#MyWorkTitle">Product</a></li>
+                 </ul>
+            </nav>
+        </div>
+        </div>
+        
     </article>
 
     <div class="clear"></div>
 
    <article class="panel" id="MyWork">
         <div id="AllWork">
-                <div class="image">
+                <div class="image featured mobileui">
                     <a href="sub/Up.html">
                     <div id="Up">
                         <img src="img/Up3.gif" style="" alt="" />
@@ -160,17 +179,16 @@
 
                     <p><b>Up</b><br>IOS Game Application</p>
                 </div>
-                <div class="image">
-                    <a href="sub/Chain.html">
-                    <div id="chain">
-                        <div class="ccircle1"></div>
-                        <div class="ccircle2"></div>
-                    </div>    
+                
+                <div class="image featured web">
+                    <a href="sub/MajorMajor.html">
+                        <div id="majormajor"><br><br><br>
+                            MAJOR<br>MAJOR
+                        </div>    
                     </a>
-                    <p><b>Chain</b><br>
-                    Phone Game Application</p>
+                    <p><b>2017 Major Major Show</b> <br>Website</p>
                 </div>
-                <div class="image">
+                <div class="image featured web">
                     <a href="https://www.behance.net/gallery/49406493/FANERNA(Grand-Prize)-Getting-fans-back-to-the-stadium" target="_blank">
                         <div id="fanrena">
                             <img src="img/fanera.png"/>
@@ -182,43 +200,68 @@
                         Web Application
                     </p>
                 </div>
-                <div class="image">
+                <div class="image featured installation">
                     <a href="sub/HiFive.html">
                     <div id="HiFive">
-                        <img src="img/hi5.png" style="" alt="" />
+                        <img src="img/Hi5/hi5.png" style="" alt="" />
                     </div>
                     </a>
-                    <p><b>HI Raise to the power of 5</b><br>Installation (Coming Soon)</p>
+                    <p><b>HI Raise to the Power of 5</b><br>Installation</p>
                 </div>
-                <div class="image">
+                <div class="image featured arvr">
+                    <a href="sub/Fabry.html">
+                        <div id="Fabry">
+                        <img src="img/Fabry/fabry.png"/>
+                            <div style="margin-top: -150px;">
+                            FABRY
+                            </div>
+                        </div>    
+                    </a>
+                    <p>Parson's Benefit<br>
+                    AR Phone App
+                    </p>
+                </div>
+                <div class="image featured product">
                     <a href="sub/UntouchBox.html">
                         <div id="untouchBox">
-                            <img src="img/untouchbox.png"/>
-                        
+                            <img src="img/UTB/UTBmain.png" style="position: absolute;" />
+                            <div id="prohibit">
+                                <div class="mCircle"></div>
+                                <div class="handle"></div>
+                            </div>
                         </div>    
                     </a>
                     <p><b>The Untouchable Box</b><br>Internet of Things</p>
                 </div>
-                <div class="image">
+                <div class="image product featured web">
                     <a href="https://www.behance.net/gallery/48532703/UNCERTIME-how-should-time-be-measured?sso_inbound=1#" target="_blank">
-                        <div id="uncertime"><br><br><br><br><br><br><br>
-                            UNCERTIME<br>
-                            <span>How should time be measured?</span>
+                        <div id="uncertime">
+                              <div class="mCircle"></div>
+                              <div class="handle"></div>
                         </div>    
                     </a>
-                    <p>What you know is a lie<br>
+                    <p><b>UNCERTIME</b><br>
                     Web Application
                     </p>
                 </div>
-
-                <div class="image">
+                <div class="image featured product">
                     <a href="https://www.misungkim.work/trawl/" target="_blank">
                         <div id="glass">
                           <div class="mCircle"></div>
                           <div class="handle"></div>
                         </div>  
                     </a>
-                    <p>Featured in Instructable <br>Product Design</p>
+                    <p><b>Trawl (Featured in Instructable)</b> <br>Product Design</p>
+                </div>
+                <div class="image featured mobileui">
+                    <a href="sub/Chain.html">
+                    <div id="chain">
+                        <div class="ccircle1"></div>
+                        <div class="ccircle2"></div>
+                    </div>    
+                    </a>
+                    <p><b>Chain</b><br>
+                    Phone Game Application</p>
                 </div>
                 
                 <!-- <div class="image">
@@ -229,7 +272,8 @@
                     </a>
                     <p>Explore & Look Beyond</p>
                 </div> -->
-                 <div class="image">
+                
+                 <div class="image web">
                     <!-- <a href="Projects/Void/Void.html" target="_blank"> -->
                         <div id="void"> 
                             <div class="circle"></div>
@@ -240,7 +284,7 @@
                     <!-- </a> -->
                     <p>Keep Calm & Meditate</p>
                 </div>
-                 <div class="image">
+                 <div class="image web">
                     <!-- <a href="Projects/BubbleMe/index.html" target="_blank"> -->
                         <div id="bubble"> 
                             <div class="sCircle s1"></div>
@@ -328,9 +372,15 @@
 
         <div class="teamBox">
             <div class="meContact">
-                <div class="mainPic" style="padding:11% 0%"><img  src="img/logoTypo.png"></div>
+                <div class="mainPic" style="padding:6% 0%"><img  src="img/logoTypo.png"></div>
                     <p>Aimee Abalos</p>
-                    <p class="pIntro">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"</p>
+                    <p class="pIntro">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"
+                    <br>
+                    <br>
+                    <a href="mailto:abalos.aimee@gmail.com">abalos.aimee@gmail.com</a>
+                    <br>
+                    </p>
+                    
                 <div class="socialPic">
                     <a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook.png"></a>
                     <a href="https://www.instagram.com/aimmemee/"><img src="icon/ins.png"></a>
@@ -339,7 +389,7 @@
                 </div>
             </div>
             <div class="aboutMeContainer">
-                    <p >
+                    <p>
                         Aimee Abalos is a current graduate Design and Technology student at Parsons School of Design. She believes the best education is through exploration, therefore before deciding to become a designer, she dove into different categories such as economics, psychology, entrepreneurship, management and computer engineering. During her undergraduate studies as an IT student, she partners with Philippine government and non-profit organizations providing services with all her skills to help them improve their business process services for free.
                         <br>
                         <br>
@@ -363,7 +413,6 @@
 
 </body>
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    
     <!-- <script type="text/javascript" src="js/plugins/animation.velocity.min.js"></script> -->
     <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="js/lib/velocity.min.js"></script>
