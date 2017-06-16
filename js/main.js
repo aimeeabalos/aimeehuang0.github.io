@@ -30,13 +30,13 @@ var sceneHi = new ScrollMagic.Scene({
   .addTo(controller);
 
 
-var scencework = new ScrollMagic.Scene({
-    triggerElement: "#MyWorkTitle",
-    duration:700
-  })
-  // .addIndicators() 
-  .setPin("#MyWorkTitle")
-  .addTo(controller);
+// var scencework = new ScrollMagic.Scene({
+//     triggerElement: "#MyWorkTitle",
+//     duration:700
+//   })
+//   // .addIndicators() 
+//   .setPin("#MyWorkTitle")
+//   .addTo(controller);
 
 $(document).ready(function () {
 
