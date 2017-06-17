@@ -432,7 +432,7 @@ article#MyIntro{
 }
 #MyWork{
   height: auto;
-  /*margin-top: -700px;*/
+  margin-top: -700px;
 }
 #AllWork{
   background-color: white;
