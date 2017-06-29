@@ -48,4 +48,31 @@ $(document).ready(function () {
       $(this).parent().addClass("active");
       $("#AllWork").find("."+searchactive).addClass("active");
   });
+
+  if(window.location.hash) {
+      var searchtag = "";
+      $(".image").removeClass("active");
+      $(".nav-bar").find(".active").removeClass("active");
+      if(window.location.hash == "#MyWebTitle")
+      {
+        searchtag = "web";
+      }
+      else if(window.location.hash == "#MyMobileTitle")
+      {
+        searchtag = "mobileui";
+      }
+      else if(window.location.hash == "#MyARVRTitle")
+      {
+        searchtag = "arvr";
+      }    
+      else
+      {
+        searchtag = "featured";
+      }  
+      $("#"+searchtag).addClass("active");
+      $("#AllWork").find("."+searchtag).addClass("active");
+      $(window).scrollTop(0);
+  } else {
+    // Fragment doesn't exist
+  }    
 });

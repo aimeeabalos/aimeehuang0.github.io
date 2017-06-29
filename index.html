@@ -6,121 +6,128 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>     
-     <style>
-        @media all and (max-width: 35em) {
-            .my-breakpoint .ui-block-a,
-            .my-breakpoint .ui-block-b,
-            .my-breakpoint .ui-block-c,
-            .my-breakpoint .ui-block-d,
-            .my-breakpoint .ui-block-e {
-              width: 100%;
-              float:none;
-              min-height: 300px;
-            }
-            .ui-block-b,.ui-body,.ui-body-b {
-                min-height: 300px;
-            }
-            #MyProject
-            {
-              height:1200px;
-            }
-            #AllWork
-            {
-                height: auto;
-            }
-            .listcontent{
-              font-size: 2.6vw;
-            }
-            .caseIntro{
-              font-size: 12px;
-            }
-            /*Button*/
-    
-              button{
-                padding: 20px;
-              }
-              .button-two{
-                margin: 0 0 0 19vw; /*100px*/
-              }
-              /*Button Two*/
-              .button-two {
-                border-radius: 4px;
-                background-color:white;
-                border: 1px solid;
-                border-color: black;
-                color: black;
-                padding: 10px;
-                width: 50vw;
-                transition: all 0.5s;
-                font-size: 12px;
-              }
-              .button-two span:after {
-                right: -10px;
-              }
-                .button-two:hover span {
-                color:white;
-                padding-right: 10px;
-              }
-              .image{
-                margin-left: 10vw;
-              }
-              .mainPic{
-                display: none;
-              }
-              .meContact
-              {
-                width:100%;
-                margin:20% 0%;
-              }
-              .meContact p {
-                width:100%;
-                font-size:30px;
-                margin-right:0%;
-                margin-left:0%;
-              }
-              .meContact .pIntro {
-                width:100%;
-                font-size:12px;
-              }
-               .aboutMeContainer
-                {
-                  width: 100%;
-                  margin:5% 0% 0% 0%;
-                  margin-left: 2%;
-                  height: auto;
-                  float: left;
-                }
-
-                .aboutMeContainer p
-                {
-                  color: grey;
-                  font-size: 12px;
-                }
-                .socialPic{
-                    margin-left: 20vw;
-                }
-                .socialPic img{
-                  width: 40px;
-                  padding: 4px;
-                }
-                #main-menu{
-                    margin-top: 10%;
-                    text-align: center;
-                }
+    <style>
+    @media all and (max-width: 560px) {    
+        #AllWork
+        {
+        height: auto;
         }
-	  </style>
+        .listcontent{
+        font-size: 2.8vw;
+        left: 50vw;
+        }
+        #AllWork {
+        width:100%;
+        height: auto;
+        padding:5%;
+        }
+        
+        .image{
+        margin-left: 10vw;
+        }
+        .mainPic{
+        display: none;
+        }
+        .meContact
+        {
+        width:100%;
+        margin:20% 0%;
+        }
+        .meContact p {
+        width:100%;
+        font-size:30px;
+        margin-right:0%;
+        margin-left:0%;
+        }
+        .meContact .pIntro {
+        width:100%;
+        font-size:12px;
+        }
+        .aboutMeContainer
+        {
+        width: 100%;
+        margin:5% 0% 0% 0%;
+        margin-left: 2%;
+        height: auto;
+        float: left;
+        }
+        .aboutMeContainer p
+        {
+        color: grey;
+        font-size: 12px;
+        }
+        .socialPic{
+        margin-left: 20vw;
+        }
+        .socialPic img{
+        width: 40px;
+        padding: 4px;
+        }
+    }
+    @media all and (max-width: 760px) {
+        .my-breakpoint .ui-block-a,
+        .my-breakpoint .ui-block-b,
+        .my-breakpoint .ui-block-c,
+        .my-breakpoint .ui-block-d,
+        .my-breakpoint .ui-block-e {
+        width: 100%;
+        float:none;
+        min-height: 300px;
+        }
+        .ui-block-b,.ui-body,.ui-body-b {
+        min-height: 300px;
+        }
+        /*Button*/
+        button{
+        padding: 20px;
+        }
+        .button-two{
+        margin-left: 23vw;
+        }
+        /*Button Two*/
+        .button-two {
+        border-radius: 4px;
+        background-color:white;
+        border: 1px solid;
+        border-color: black;
+        color: black;
+        padding: 10px;
+        width: 50vw;
+        transition: all 0.5s;
+        font-size: 12px;
+        }
+        .button-two span:after {
+        right: -10px;
+        }
+        .button-two:hover span {
+        color:white;
+        padding-right: 10px;
+        }
+        #MyProject
+        {
+        height:auto;
+        }
+        .caseIntro{
+        font-size: 16px;
+        }
+        #main-menu{
+        margin-top: 10%;
+        text-align: center;
+        }
+    }
+    </style>
 </head>
 
 <body>
    <a href="#MyLink" id="mylogo" title="My Logo link"></a>
    <nav id="sideNav">
-		<h2>Home</h2>
+		<h2><a href="index.html">Home</a></h2>
 		<ul>
+            <li><a href="#MyWorkTitle">My Work</a></li>
 			<li><a href="#MyProject">My Projects</a></li>
 			<li><a href="Alivio.html">ALIVIO</a></li>
 			<li><a href="HIS.html">MANILA General</a></li>
 			<li><a href="CIS.html">MEDICAL X</a></li>
-			<li><a href="#MyWorkTitle">My Work</a></li>
 			<li><a href="#MyTeam">Contact Me</a></li>
 		</ul>
 	</nav>
@@ -128,7 +135,7 @@
     <article class="panel" id="MyIntro">
         <div class="MyName">
           <div id="name" class="scroll-name">
-            <div id="name-txt">A  I  M  E  E</div>
+            <div id="name-txt">AIMEE</div>
           </div>
         </div>
         <div class="listcontent"> 
@@ -146,16 +153,20 @@
     <div class="clear"></div>
 
     <article class="panel" id="MyWorkTitle" style="z-index: 100;">
+        <div id="MyWebTitle"></div>
+        <div id="MyMobileTitle"></div>
+        <div id="MyARVRTitle"></div>
+
         <div class="tri-down">
             MY WORK &#xbb;
-            <div style="text-align: right;width: 88%;">
+            <div style="text-align: right;width: 93%;">
             <nav id="main-menu">
                  <ul class="nav-bar">
                       <li id="featured" class="nav-featured active"><a href="#MyWorkTitle">Featured</a></li>
-                      <li id="web" class="nav-mobilewebui"><a href="#MyWorkTitle">Web</a></li>
-                      <li id="mobileui" class="nav-mobilewebui"><a href="#MyWorkTitle">Mobile/UI</a></li>
+                      <li id="web" class="nav-mobilewebui"><a href="#MyWebTitle">Web</a></li>
+                      <li id="mobileui" class="nav-mobilewebui"><a href="#MyMobileTitle">Mobile/UI</a></li>
                       <li id="installation" class="nav-installation"><a href="#MyWorkTitle">Installation</a></li>
-                      <li id="arvr" class="nav-arvr"><a href="#MyWorkTitle">AR/VR</a></li>
+                      <li id="arvr" class="nav-arvr"><a href="#MyARVRTitle">AR/VR</a></li>
                       <li id="product" class="nav-product"><a href="#MyWorkTitle">Product</a></li>
                  </ul>
             </nav>
@@ -262,7 +273,7 @@
                     Phone Game Application</p>
                 </div>
                 <div class="image featured web">
-                    <a href="sub/FILTR.html" target="_blank">
+                    <a href="sub/FILTR.html">
                         <div id="filtr">
                                 <div class='loading-anim'>
                                 <div class='border out'></div>
@@ -273,6 +284,25 @@
                     </a>
                     <p><b>FILTR</b><br>
                     Web Prototype
+                    </p>
+                </div>
+                <div class="image featured">
+                    <a href="sub/Model.html">
+                        <div id="model">
+                                <div class="cube-container">
+                                  <div class="cube">
+                                    <figure class="front"></figure>
+                                    <figure class="back"></figure>
+                                    <figure class="right"></figure>
+                                    <figure class="left"></figure>
+                                    <figure class="top"></figure>
+                                    <figure class="bottom"></figure>
+                                  </div>
+                                </div>
+                        </div>    
+                    </a>
+                    <p><b>3D Model</b><br>
+                    <!-- Web Prototype -->
                     </p>
                 </div>
                 <!-- <div class="image">
@@ -337,7 +367,7 @@
         <div id="AllProject">
             <div class="tri-down">MY PROJECT &#xbb;</div>
                 <div class="ui-grid-b my-breakpoint">
-                    <div class="ui-block-b"><div class="ui-body ui-body-d">
+                    <div class="ui-block-a">
                     <div class="workIMG">
                         <div class="caseHeading" style="z-index: 50"><a href="Alivio.html">Alivio</a></div> 
                         
@@ -347,10 +377,9 @@
                         </div>
 
                         <a href="Alivio.html"><button class="button-two"><span>View Case</span></button></a>
-                    </div>
                     </div></div>
 
-                    <div class="ui-block-b"><div class="ui-body ui-body-d">
+                    <div class="ui-block-b">
                     <div class="workIMG">
                         <div class="caseHeading" style="z-index: 50"><a href="HIS.html" target="_blank">MNL General</a></div>     
                                            
@@ -359,10 +388,9 @@
                             <p>A <b>H</b>ospital <b>I</b>nformation <b>S</b>ystem that is designed to manage the different aspects of information in terms of its' clinical, financial and operational management</p>
                         </div>
                         <a href="HIS.html"><button class="button-two"><span>View Case</span></button></a>
-                    </div>
                     </div></div>
 
-                    <div class="ui-block-b"><div class="ui-body ui-body-d">
+                    <div class="ui-block-c">
                     <div class="workIMG">
                     <div class="caseHeading" style="z-index: 50"><a href="CIS.html">Medical</a></div>  
                     <div class="caseSub">CIS</div>
@@ -370,11 +398,10 @@
                             <p>A <b>C</b>linical <b>I</b>nformation <b>S</b>ystem maximizes the utilization of patient information for medical care  </p>
                         </div>
                         <a href="CIS.html"><button class="button-two"><span>View Case</span></button></a>
-                    </div>
                     </div></div>
 
                 </div>
-            </div>        
+            </div>
     </article>
 
     <div class="clear"></div>
@@ -388,20 +415,19 @@
                     <p>Aimee Abalos</p>
                     <p class="pIntro">"A Lead Engineer/Designer who stays hungry eager to learn and try everything"
                     <br>
-                    <br>
-                    <a href="mailto:abalos.aimee@gmail.com">abalos.aimee@gmail.com</a>
-                    <br>
                     </p>
                     
                 <div class="socialPic">
-                    <a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook.png"></a>
-                    <a href="https://www.instagram.com/aimmemee/"><img src="icon/ins.png"></a>
-                    <a href="https://www.linkedin.com/in/aimee-abalos-b72a21b5?authType=NAME_SEARCH&authToken=tN2S&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A411612998%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1470576542699%2Ctas%3Aaimee%20abalos"><img src="icon/linkedin.png"></a>
-                    <a href="https://twitter.com/huangwanshang"><img src="icon/twitter.png"></a>
+                    <a href="https://www.facebook.com/aimee.abalos"><img src="icon/facebook1.png"></a>
+                    <a href="https://github.com/aimeehuang0"><img src="icon/git1.png"></a>
+                    <a href="https://www.instagram.com/aimmemee/"><img src="icon/ins1.png"></a>
+                    <a href="https://www.linkedin.com/in/aimee-abalos-b72a21b5?authType=NAME_SEARCH&authToken=tN2S&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A411612998%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1470576542699%2Ctas%3Aaimee%20abalos"><img src="icon/linkedin1.png"></a>
+                    <!-- <a href="https://twitter.com/huangwanshang"><img src="icon/twitter1.png"></a> -->
                 </div>
             </div>
             <div class="aboutMeContainer">
                     <p>
+                        <br>
                         Aimee Abalos is a current graduate Design and Technology student at Parsons School of Design. She believes the best education is through exploration, therefore before deciding to become a designer, she dove into different categories such as economics, psychology, entrepreneurship, management and computer engineering. During her undergraduate studies as an IT student, she partners with Philippine government and non-profit organizations providing services with all her skills to help them improve their business process services for free.
                         <br>
                         <br>
@@ -419,7 +445,10 @@
             <p>
                 (c)Copyright 2013 - 2017 by Aimee Abalos
                 <br>
-                <a href="https://github.com/aimeehuang0">https://github.com/aimeehuang0</a>
+                    <a href="mailto:abalos.aimee@gmail.com">abalos.aimee@gmail.com</a>   
+                <br>
+                    <a href="https://github.com/aimeehuang0">https://github.com/aimeehuang0</a>
+                <br>
             </p>
         </footer>
 

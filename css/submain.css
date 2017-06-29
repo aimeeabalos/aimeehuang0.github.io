@@ -161,6 +161,48 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	    margin:5% 20%;
 	    height: auto;
 	}
+/*For image grid*/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0% 20%;
+	margin: auto;
+	text-align: center;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 47.7%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 99%; }
+}
 
 /* Example Media Queries */
 @media screen and (max-width: 65.375em) {
@@ -177,7 +219,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 		font-size: 1em;
 	}
 }
-
+/*
 @media screen and (max-width: 47.2em) {
 
-}
+}*/
