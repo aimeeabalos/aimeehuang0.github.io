@@ -88,7 +88,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 }
 
 .teamIntro{
-  margin-top:10px;
+  margin-top:5px;
   text-align: center;
   color: grey;
   font-size: 15px;
@@ -97,12 +97,14 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 .teamContact img{
 
   width: 8vw;
-  padding-bottom: 1%;
+  /*padding-bottom: 1%;*/
   padding-right: 2%;
 }
 .socialPicM img{
-  width: 2vw;
+  width: 3vw;
+  padding-bottom: 3%;
 }
+
 
 /*for Up*/
 	#ScreenshotPic{

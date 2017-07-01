@@ -56,14 +56,17 @@ $(document).ready(function () {
       if(window.location.hash == "#MyWebTitle")
       {
         searchtag = "web";
+        $(window).scrollTop(0);
       }
       else if(window.location.hash == "#MyMobileTitle")
       {
         searchtag = "mobileui";
+        $(window).scrollTop(0);
       }
       else if(window.location.hash == "#MyARVRTitle")
       {
         searchtag = "arvr";
+        $(window).scrollTop(0);
       }    
       else
       {
@@ -71,7 +74,7 @@ $(document).ready(function () {
       }  
       $("#"+searchtag).addClass("active");
       $("#AllWork").find("."+searchtag).addClass("active");
-      $(window).scrollTop(0);
+      // $(window).scrollTop(0);
   } else {
     // Fragment doesn't exist
   }    
