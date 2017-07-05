@@ -163,11 +163,23 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	    margin:5% 20%;
 	    height: auto;
 	}
+	#fullvid { 
+	    position: relative;
+	    width: 96%;
+	    margin: 2%;
+	    height: auto;
+	}
 /*For image grid*/
 /*  SECTIONS  */
 .section {
 	clear: both;
 	padding: 0% 20%;
+	margin: auto;
+	text-align: center;
+}
+.section1 {
+	clear: both;
+	padding: 0% 2%;
 	margin: auto;
 	text-align: center;
 }
@@ -194,7 +206,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	width: 74.6%;
 }
 .span_2_of_4 {
-	width: 47.7%;
+	width: 49.2%;
 }
 .span_1_of_4 {
 	width: 23.8%;
