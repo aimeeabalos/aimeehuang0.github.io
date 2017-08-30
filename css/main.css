@@ -343,7 +343,7 @@ article#MyIntro{
   height: 100vh;
 }
 
-#main-menu .nav-bar { list-style:none; margin-top: -24px; font-size: 13px;}
+#main-menu .nav-bar { list-style:none; margin-top: -24px; font-size: 12px;}
 #main-menu .nav-bar li { display:inline; padding:0 10px; }
 .nav-bar li.active{
     border-bottom: 1px solid #000;
@@ -382,7 +382,7 @@ article#MyIntro{
 
 .listcontent {
   position: absolute;
-  left: 48vw;
+  left: 50vw;
   top:75vh;
   transform: translate(-50%, -50%);
   font-size: 1.4vw;
@@ -400,7 +400,7 @@ article#MyIntro{
 
 .listcontent ul {
   margin-top:0;
-  text-align:left;
+  text-align:center;
   list-style:none;
   float:left;
   padding-right:20px;
@@ -1176,7 +1176,7 @@ article#MyIntro{
   .ui-grid-b
   {
     width: 100%;
-    margin: 0 auto;
+    margin: 5px auto;
   }
 
 .container{
