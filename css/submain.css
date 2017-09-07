@@ -44,6 +44,18 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	color: black;
 	padding-left: 7%;
 }
+.tmlineDT2{
+	display: block;
+	width: 20%;
+	position: absolute;
+	font-size: 14px;
+	color: black;
+	padding-left: 10%;
+}
+.tmlineDT3{
+	float: right;
+	font-size: 10px;
+}
 
 /* Right content */
 .timeBox {
@@ -223,6 +235,12 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 
 	.timeLine > li .tmlineDT{
 		font-size: 1em;
+	}
+	.timeLine > li .tmlineDT2{
+		font-size: 0.8em;
+	}
+	.timeLine > li .tmlineDT3{
+		font-size: 0.5em;
 	}
 	.timeLine:before,.circle {
 		display: none;
