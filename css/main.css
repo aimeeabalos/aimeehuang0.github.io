@@ -1,5 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:500,700");
+
 
 /* Reset */
 
@@ -45,6 +47,10 @@
 
   body {
     -webkit-text-size-adjust: none;
+  }
+  @font-face {
+    font-family: 'franklingothic';
+    src: url(../font/franklingothic-book.otf);
   }
 
 /* Type */
@@ -1146,13 +1152,19 @@ article#MyIntro{
     margin: 1.5em auto;
     overflow:hidden;
     padding:.5em;
+    display: flex;
+    display: -webkit-flex; /* Safari 8 */
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;         /* Safari 8 */
+    justify-content:center;
+    -webkit-justify-content: center;       /* Safari 8 */
   }
 
   .image {
       position:relative;
       width: 270px;
       height: 270px;
-      float:left;
+      /*float:left;*/
       margin: 12px;
       margin-bottom: 40px; 
       display: none;
@@ -1179,6 +1191,28 @@ article#MyIntro{
     margin: 5px auto;
   }
 
-.container{
-  position: relative;
-}
+  .container{
+    position: relative;
+  }
+
+  .gridTable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-gap:1px;*/
+  }
+
+  .gridTable {
+    background: #444;
+    /*border: 1px solid grey;*/
+  }
+
+  .gridColums {
+    background: #fff;
+    padding: 0.5vw;
+    line-height: 20px;
+    font-weight: bolder;
+  }
+  .gridColums span {
+    font-family: 'franklingothic';
+    font-size: 1vw;
+  }

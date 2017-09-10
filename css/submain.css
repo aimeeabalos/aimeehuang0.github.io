@@ -22,7 +22,13 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	padding: 0;
 	list-style: none;
 	position: relative;
-} 
+}
+.timeLine1 {
+	margin: 50px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
 
 /* The line */
 .timeLine:before {
@@ -33,6 +39,16 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	width: 3px;
 	background: black;
 	left: 20%;
+	margin-left: -10px;
+}
+.timeLine1:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background: black;
+	left: 12%;
 	margin-left: -10px;
 }
 
@@ -46,11 +62,11 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 }
 .tmlineDT2{
 	display: block;
-	width: 20%;
+	width: 5%;
 	position: absolute;
-	font-size: 14px;
+	font-size: 11px;
 	color: black;
-	padding-left: 10%;
+	padding-left: 6%;
 }
 .tmlineDT3{
 	float: right;
@@ -60,10 +76,20 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 /* Right content */
 .timeBox {
 	margin: 0 10% 15px 25%;
-	/*background: black;
-	color: #fff;*/
 	padding: 2em;
-	/*font-family: 'Helvetica', sans-serif;*/
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	border:none;
+	background: white;
+	color: black;
+}
+.timeBox1{
+	margin: 0 10% 15px 15%;
+	padding: 2em;
 	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.4;
@@ -76,6 +102,11 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 }
 
 .timeLine > li .timeBox h2 { 
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(0,0,0,1);
+}
+.timeLine1 > li .timeBox h2 { 
 	margin-top: 0px;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid rgba(0,0,0,1);
@@ -236,13 +267,16 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	.timeLine > li .tmlineDT{
 		font-size: 1em;
 	}
-	.timeLine > li .tmlineDT2{
+	.timeLine1 > li .tmlineDT2{
 		font-size: 0.8em;
 	}
-	.timeLine > li .tmlineDT3{
+	.timeLine1 > li .tmlineDT3{
 		font-size: 0.5em;
 	}
 	.timeLine:before,.circle {
+		display: none;
+	}
+	.timeLine1:before,.circle {
 		display: none;
 	}
 	.timeBox {
@@ -250,6 +284,15 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 		padding: 1em;
 		font-size: 1em;
 	}
+	.timeBox1 {
+		margin: 0 auto;
+		padding: 1em;
+		font-size: 1em;
+	}
+	.gridColums span {
+    font-family: 'franklingothic';
+    font-size: 1.5vw;
+  }
 }
 /*
 @media screen and (max-width: 47.2em) {
