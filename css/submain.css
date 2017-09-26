@@ -212,6 +212,17 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	    margin: 2%;
 	    height: auto;
 	}
+
+/* For Image Hover*/
+.hovImage:hover .mainImage{
+	display: none
+}
+.hovImage:hover .gifImage{
+	display: block
+}
+.gifImage {
+	display: none;
+}	
 /*For image grid*/
 /*  SECTIONS  */
 .section {
