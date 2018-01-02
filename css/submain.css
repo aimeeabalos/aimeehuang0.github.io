@@ -158,11 +158,17 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	  width: 24%;
 	  float: left;
 	}
+/*	#Upuser:hover .mainImage{
+		display: none
+	}
+	#Upuser:hover .gifImage{
+		display: block
+	}*/
 
 /*Video*/
 	#mockupBG{
 		position: relative;
-		width: 50%;
+		width: 77%;
 		z-index: -10;
 	}
 	.vidcontainer{
@@ -198,8 +204,8 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	}
 	#span2Vid{
 		position: absolute;
-		width:11%;
-		margin: 4.5% 19.5%;
+		width: 11.3%;
+		margin: 10.8% 16.5%;
 		/*margin-left: 19.5%;*/
 	}
 	#demoVid{
@@ -250,6 +256,14 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	min-height: 100vh;
 	/*text-align: center;*/
 }
+.section2 {
+	clear: both;
+	padding: 2% 5%;
+	margin: auto;
+	min-height: 50vh;
+	/*background-color: lightgrey;*/
+	/*text-align: center;*/
+}
 
 /*  COLUMN SETUP  */
 .col {
@@ -279,10 +293,24 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	width: 20%;
 }
 
+#nav-link{ text-align: center;width: 99%;margin-bottom: 5%;}
+#nav-link .nav-bar {  margin-top: -24px; font-size: 24px;}
+#nav-link .nav-bar li { color: white; display:inline; padding:0 10px; }
+#nav-link .nav-bar li a { color: lightgrey;}
+#nav-link .nav-bar li.active{
+	color: black;
+    /*border-bottom: 1px solid #000;*/
+    padding-bottom: 4px;
+}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 99%; }
+	#span2Vid{
+		width: 17.5%;
+		margin: 16% 25%;
+	}
 }
 
 /* Example Media Queries */
@@ -321,4 +349,4 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 /*
 @media screen and (max-width: 47.2em) {
 
-}*/
+}
