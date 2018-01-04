@@ -206,6 +206,10 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
 
 /*	#Upuser:hover .mainImage{
@@ -254,14 +258,14 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	}
 	#span2Vid{
 		position: absolute;
-		width: 11.3%;
-		margin: 10.8% 16.5%;
+		width: 12.2%;
+		margin: 11.6% 17.8%;
 		/*margin-left: 19.5%;*/
 	}
 	#demoVid{
-		position: relative;
-		width:12%;
-		margin: 15% 20.7%;
+		position: absolute;
+		width:11%;
+		margin: 10.35% 16%;
 	}
 	#bgvid { 
 	    position: relative;
@@ -311,8 +315,12 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	padding: 2% 5%;
 	margin: auto;
 	min-height: 50vh;
-	/*background-color: lightgrey;*/
-	/*text-align: center;*/
+}
+.section3 {
+	clear: both;
+	padding: 0% 5%;
+	margin: auto;
+	min-height: 1vh;
 }
 
 /*  COLUMN SETUP  */
@@ -334,7 +342,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	width: 96%;
 }
 .span_3_of_4 {
-	width: 65.4%;
+	width: 70%;
 }
 .span_2_of_4 {
 	width: 45.2%;
@@ -342,6 +350,12 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 .span_1_of_4 {
 	width: 20.1%;
 }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 99%; }
+.span_2_of_3 { width: 62%; }
+.span_1_of_3 { width: 29.26%; }
+
 
 #nav-link{ text-align: center;width: 99%;margin-bottom: 5%;}
 #nav-link .nav-bar {  margin-top: -24px; font-size: 24px;}
@@ -357,6 +371,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 99%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 99%; }
 	#span2Vid{
 		width: 17.5%;
 		margin: 16% 25%;
