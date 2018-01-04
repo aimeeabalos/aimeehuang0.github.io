@@ -210,6 +210,17 @@ h6 {
     left:-25vw;
     z-index: 50;
   }
+  #sideNav1
+  {
+    position: absolute;
+    top:10px;
+    width:100px;
+    display: block;
+    left:-25vw;
+    z-index: 50;
+    left:5vw;
+    z-index: 1000;
+  }
 
   #mylogo {
      display: block;
@@ -437,12 +448,12 @@ article#MyIntro{
 
 .socialPic
 {
-  margin-left:10%;
+  margin-left:3%;
 }
 .socialPic img{
-  width: 4.8vw;
-  padding: 0.8vw;
-  padding-top: 5%
+  width: 4.5vw;
+  padding: 0vw 1vw;
+  /*padding-top: 5%*/
 }
 .meContact p{
   width: 20vw;
@@ -519,6 +530,9 @@ article#MyIntro{
 
   margin-top: 5%;
   padding:2%;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
 
 #footer p{
