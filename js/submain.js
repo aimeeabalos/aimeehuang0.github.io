@@ -1,5 +1,7 @@
 var words = ["HELLO","BONJOUR", "HOLA", "CIAO", "NAMASTE", "SALAAM", "Здравствуйте", "مرحبا", "你好", "こんにちは", "안녕하세요", "สวัสดี", "OLA", "ALOHA","SALAM","AHOJ","SAlVE","MERHABA","سلام"];
 
+// $(document).ready(function() { alert("yeah"); });
+
 window.addEventListener("load", function() {
     var randoms = window.document.getElementsByClassName("randoms");
     for (i = 0; i < randoms.length; i++)
