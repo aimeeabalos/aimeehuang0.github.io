@@ -1136,6 +1136,10 @@ article#MyIntro{
     position: relative;
   }
 
+  .container2{
+    position: absolute;
+  }
+
   .gridTable {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
