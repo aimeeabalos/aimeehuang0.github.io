@@ -13,6 +13,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Libre Franklin', sans-serif;*/
+
+
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -44,14 +48,9 @@ table {
 body {
   -webkit-text-size-adjust: none;
 }
-@font-face {
-  font-family: 'franklingothic';
-  src: url(../font/franklingothic-book.otf);
-}
 
 /* Type */
 body, input, select, textarea {
-  font-family: "franklingothic", sans-serif;
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.5;
@@ -81,7 +80,8 @@ a {
 
 a:hover {
   border-bottom-color: transparent;
-  color: #f2849e !important;
+  /*color: #f2849e !important;*/
+  color: #DC3D24 !important;;
 }
 
 strong, b {
@@ -134,15 +134,15 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h2 {
-  font-weight: 900;
+  font-weight: 950;
   line-height: 1.5;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.1em;
   margin: 1.5vh 0 3vh 0;
-/*  color: gray;
-*/}
+/*  color: gray;*/
+}
 
 h3 {
   font-size: 1em;
@@ -200,6 +200,11 @@ h6 {
   text-align: right;
 }
 
+.subName{
+  text-align: center;
+  color: red;
+}
+
 /* Menu */
   #sideNav
   {
@@ -220,6 +225,7 @@ h6 {
     z-index: 50;
     left:5vw;
     z-index: 1000;
+    font-family: 'Raleway', sans-serif;
   }
 
   #mylogo {
@@ -310,7 +316,7 @@ article#MyIntro{
 #main-menu .nav-bar { list-style:none; margin-top: -24px; font-size: 12px;}
 #main-menu .nav-bar li { display:inline; padding:0 10px; }
 #main-menu .nav-bar li.active{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #DC3D24;
     padding-bottom: 4px;
 }
 
@@ -334,6 +340,7 @@ article#MyIntro{
 }
 
 #name-txt {
+  font-family: "", sans-serif;
   width: 80vw;
   margin:0 auto;
   position: absolute;
@@ -355,6 +362,7 @@ article#MyIntro{
   height: 40px;
   overflow:hidden;
   font-weight:400;
+
 }
 
 .listcontent p {
@@ -402,6 +410,7 @@ article#MyIntro{
 #MyWork{
   height: auto;
   margin-top: -700px;
+  min-height:800px;
 }
 #AllWork{
   background-color: white;
@@ -487,7 +496,7 @@ article#MyIntro{
 .caseIntro
 {
   margin: 1vw 2vw;
-  text-align: center;
+  text-align: justify;
   font-size: 1.2vw;
   color: #636363;
 }
@@ -513,11 +522,12 @@ article#MyIntro{
   width: 100%;
   background: white;
   font-size: 40px;
+  font-family: "Raleway", sans-serif;
 }
 .aboutMeContainer
 {
   width: 47vw;
-  margin:5% 0% 0% 0%;
+  margin:3% 0% 0% 0%;
   margin-left: 2%;
   height: auto;
   float: left;
@@ -527,15 +537,24 @@ article#MyIntro{
 }
 
 #footer{
-
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   padding:2%;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
 
-#footer p{
+#footerbg{
+  /*margin-top: 5%;*/
+  padding-top: 5%;
+  margin-left: 2%;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+#footer p, #footerbg p{
     text-align: center;
     line-height: 15px;
     -webkit-column-count: 1;
@@ -549,7 +568,7 @@ article#MyIntro{
 }
 
 
-#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive,#Fabry,#majormajor,#filtr,#model,#Crane{
+#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive,#Fabry,#majormajor,#filtr,#model,#Crane,#coexist{
   width: 270px;
   height: 270px;
   border-bottom: 0.5px solid;
@@ -577,6 +596,15 @@ article#MyIntro{
   text-align: center;
 }
 #majormajor span{
+  font-size: 12px;
+}
+#coexist{
+  padding-top: 50px;
+  font-size: 40px;
+  line-height: 25px;
+  text-align: center;
+}
+#coexist span{
   font-size: 12px;
 }
 #trawl{
@@ -1037,13 +1065,13 @@ article#MyIntro{
   button{
     color:#fff;
     text-align: center;
-    padding: 1vw;
+    padding: 0.8vw;
   }
 
   /*Button Two*/
   .button-two {
     cursor: pointer;
-    margin-left: 10.5vw;
+    margin-left: 9.5vw;
     border: 1px solid;
     /*margin: 0 0 0 8vw;*/
     border-radius: 4px;
@@ -1128,7 +1156,7 @@ article#MyIntro{
   }
   .ui-grid-b
   {
-    width: 100%;
+    width: 92%;
     margin: 5px auto;
   }
 

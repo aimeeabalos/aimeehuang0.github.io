@@ -279,10 +279,49 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 	    margin: 2%;
 	    height: auto;
 	}
+	#myFullVideo {
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    width: 100%;
+	    /*margin: 2%;*/
+	    min-width: 100%; 
+	    min-height: 100%;
+	    z-index: -1;
+	}
 
 .button-two {
     margin: 0 0 0 0vw;
   }
+
+/*Center Horizontal & Vertical*/
+.centerParent {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  /*background: white;*/
+  /*height: auto;*/
+  /*width: 60%;*/
+  margin: 0 auto;
+  /*padding: 20px;*/
+  padding-top: 43%;
+  resize: both;
+  z-index: -1;
+  /*overflow: auto;*/
+ }
+.centerChild {
+  /*background: #e2e2e2;*/
+  background: rgba(226, 226, 226, 0.5);
+  color: white;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  /*top: 50%;*/
+  left: 50%;
+  padding-left: 2%;
+  resize: both;
+  text-align: center;
+  overflow: auto;
+}
 
 /* For Image Hover*/
 .hovImage:hover .mainImage{
