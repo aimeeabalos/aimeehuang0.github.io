@@ -233,7 +233,7 @@ h6 {
      position: absolute;
      width: 40px;
      height:40px;
-     left:4vw; 
+     left:4vw;
      top: 5vh;
      background-size: 40px 40px;
      background-image: url('../img/logo.png');
@@ -318,6 +318,10 @@ article#MyIntro{
 #main-menu .nav-bar li.active{
     border-bottom: 1px solid #DC3D24;
     padding-bottom: 4px;
+}
+
+.emphasize{
+  color: #DC3D24;
 }
 
 /* My Name Aimee */
@@ -513,6 +517,10 @@ article#MyIntro{
   text-align: center;
 
 }
+.newsLink{
+  font-size: 10px;
+  /* text-decoration: underline; */
+}
 
 /*Stroke*/
 .tri-down {
@@ -533,7 +541,7 @@ article#MyIntro{
   float: left;
   color: gray;
   text-align: justify;
-  font-size: 1.15vw;
+  font-size: 16px;
 }
 
 #footer{
@@ -639,7 +647,7 @@ article#MyIntro{
   #glass:hover{
     width: 270px;
     height: 270px;
-  }  
+  }
   #glass:hover .mCircle{
     animation: magnify 5s linear infinite;
   }
@@ -663,14 +671,14 @@ article#MyIntro{
     width: 40px;
     border: 3px solid black;
   }
-  @keyframes magnify { 
-      0% { 
+  @keyframes magnify {
+      0% {
           transform: rotateZ(45deg);
       }
-      50% { 
+      50% {
           transform: rotateZ(70deg);
       }
-      100% { 
+      100% {
           transform: rotateZ(45deg);
       }
   }
@@ -679,7 +687,7 @@ article#MyIntro{
 #untouchBox:hover{
   width: 270px;
   height: 270px;
-}  
+}
 #untouchBox:hover .mCircle{
   animation: untouchable 3s linear infinite;
 }
@@ -703,14 +711,14 @@ article#MyIntro{
   width: 110px;
   border: 3px solid black;
 }
-@keyframes untouchable { 
-    0% { 
+@keyframes untouchable {
+    0% {
         transform: rotateZ(45deg);
     }
-    50% { 
+    50% {
         transform: rotateZ(70deg);
     }
-    100% { 
+    100% {
         transform: rotateZ(45deg);
     }
 }
@@ -799,15 +807,15 @@ article#MyIntro{
     width: 220px;
   }
 
-  @keyframes spin { 
-    100% { 
-      transform: rotateZ(360deg); 
+  @keyframes spin {
+    100% {
+      transform: rotateZ(360deg);
     }
   }
 
-  @keyframes spinback { 
-    100% { 
-      transform: rotateZ(-360deg); 
+  @keyframes spinback {
+    100% {
+      transform: rotateZ(-360deg);
     }
   }
 
@@ -839,7 +847,7 @@ article#MyIntro{
   }
 
 /*bubble Me*/
-  
+
   #bubble
   {
     width:270px;
@@ -874,11 +882,11 @@ article#MyIntro{
     animation-delay: 1s;
   }
 
-  @keyframes bubbleUp { 
-      0% { 
+  @keyframes bubbleUp {
+      0% {
           bottom:0%;
       }
-      100% { 
+      100% {
           bottom:65%;
       }
   }
@@ -958,7 +966,7 @@ article#MyIntro{
 }
 
 /*3D Model*/
-#model 
+#model
 {
   text-align: center;
   padding: 40% 40%;
@@ -1061,7 +1069,7 @@ article#MyIntro{
 }
 
 /*Button*/
-    
+
   button{
     color:#fff;
     text-align: center;
@@ -1135,7 +1143,7 @@ article#MyIntro{
       height: 270px;
       /*float:left;*/
       margin: 12px;
-      margin-bottom: 40px; 
+      margin-bottom: 40px;
       display: none;
   }
   .image p{
