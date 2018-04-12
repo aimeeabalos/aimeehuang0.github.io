@@ -34,7 +34,7 @@ var scencework = new ScrollMagic.Scene({
     triggerElement: "#MyWorkTitle",
     duration:700
   })
-  // .addIndicators() 
+  // .addIndicators()
   .setPin("#MyWorkTitle")
   .addTo(controller);
 
@@ -53,9 +53,14 @@ $(document).ready(function () {
       var searchtag = "";
       $(".image").removeClass("active");
       $(".nav-bar").find(".active").removeClass("active");
-      if(window.location.hash == "#MyWebTitle")
+      if(window.location.hash == "#MyGameTitle")
       {
-        searchtag = "web";
+        searchtag = "game";
+        $(window).scrollTop(0);
+      }
+      else if(window.location.hash == "#MyWebTitle")
+      {
+        searchtag = "mobileui";
         $(window).scrollTop(0);
       }
       else if(window.location.hash == "#MyMobileTitle")
@@ -67,16 +72,15 @@ $(document).ready(function () {
       {
         searchtag = "arvr";
         $(window).scrollTop(0);
-      }    
+      }
       else
       {
         searchtag = "featured";
-      }  
+      }
       $("#"+searchtag).addClass("active");
       $("#AllWork").find("."+searchtag).addClass("active");
       // $(window).scrollTop(0);
   } else {
     // Fragment doesn't exist
-  }    
+  }
 });
-
