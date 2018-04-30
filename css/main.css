@@ -15,6 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   /*font-family: 'Raleway', sans-serif;*/
   /*font-family: 'Libre Franklin', sans-serif;*/
+  /* border: 1px solid; */
 
 
 }
@@ -238,7 +239,7 @@ h6 {
      background-size: 40px 40px;
      background-image: url('../img/logo.png');
      background-repeat: no-repeat;
-     z-index: 0;
+     z-index: 2;
   }
 
   #sideNav:hover {
@@ -576,7 +577,7 @@ article#MyIntro{
 }
 
 
-#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive,#Fabry,#majormajor,#filtr,#model,#Crane,#coexist{
+#void,#bubble,#glass,#lostin,#fanrena,#uncertime,#trawl,#chain,#Up,#untouchBox,#HiFive,#Fabry,#majormajor,#filtr,#model,#Crane,#coexist,#liftar,#vroom{
   width: 270px;
   height: 270px;
   border-bottom: 0.5px solid;
@@ -607,7 +608,6 @@ article#MyIntro{
   font-size: 12px;
 }
 #coexist{
-  padding-top: 50px;
   font-size: 40px;
   line-height: 25px;
   text-align: center;
@@ -775,76 +775,90 @@ article#MyIntro{
   animation: spin 10s linear infinite;
 }
 
-  .circle {
-    position: absolute;
-    margin: 95px 95px;
-    height: 80px;
-    width: 80px;
-    background-color: black;
-    border-radius: 50%;
-  }
-  .circle1,.circle2,.circle3 {
-    position: absolute;
-    background-color: none;
-    border: 6px dashed grey;
-    border-radius: 50%;
-    /*animation: spin 10s linear infinite;*/
-  }
-  .circle1{
-    margin: 75px 75px;
-    height: 120px;
-    width: 120px;
-  }
-  .circle2{
-    margin: 50px 50px;
-    height: 170px;
-    width: 170px;
-    animation-delay: 0.3s;
-  }
-  .circle3{
-    margin: 25px 25px;
-    height: 220px;
-    width: 220px;
-  }
+.circle {
+  position: absolute;
+  margin: 95px 95px;
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+}
+.circle1,.circle2,.circle3 {
+  position: absolute;
+  background-color: none;
+  border: 6px dashed grey;
+  border-radius: 50%;
+  /*animation: spin 10s linear infinite;*/
+}
+.circle1{
+  margin: 75px 75px;
+  height: 120px;
+  width: 120px;
+}
+.circle2{
+  margin: 50px 50px;
+  height: 170px;
+  width: 170px;
+  animation-delay: 0.3s;
+}
+.circle3{
+  margin: 25px 25px;
+  height: 220px;
+  width: 220px;
+}
 
-  @keyframes spin {
-    100% {
-      transform: rotateZ(360deg);
-    }
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
   }
+}
 
-  @keyframes spinback {
-    100% {
-      transform: rotateZ(-360deg);
-    }
+@keyframes spinback {
+  100% {
+    transform: rotateZ(-360deg);
   }
+}
 
-  /*Chain Circle*/
-  #chain:hover .ccircle1{
-      animation: spinback 10s linear infinite;
-  }
-  #chain:hover .ccircle2{
-      animation: spin 10s linear infinite;
-  }
-  .ccircle1, .ccircle2{
-    position: absolute;
-    background-color: none;
-    border: 6px dashed black;
-    border-radius: 50%;
-  }
-  .ccircle1{
-    margin: 90px 90px;
-    height: 120px;
-    width: 120px;
-    /*animation: spin 10s linear infinite;*/
-  }
-  .ccircle2{
-    margin: 50px 50px;
-    height: 120px;
-    width: 120px;
-    animation-delay: 0.3s;
-    /*animation: spinback 10s linear infinite;*/
-  }
+/*Chain Circle*/
+#chain:hover .ccircle1{
+    animation: spinback 10s linear infinite;
+}
+#chain:hover .ccircle2{
+    animation: spin 10s linear infinite;
+}
+.ccircle1, .ccircle2{
+  position: absolute;
+  background-color: none;
+  border: 6px dashed black;
+  border-radius: 50%;
+}
+.ccircle1{
+  margin: 90px 90px;
+  height: 120px;
+  width: 120px;
+  /*animation: spin 10s linear infinite;*/
+}
+.ccircle2{
+  margin: 50px 50px;
+  height: 120px;
+  width: 120px;
+  animation-delay: 0.3s;
+  /*animation: spinback 10s linear infinite;*/
+}
+
+#chain .img-top, #coexist .img-top, #liftar .img-top, #HiFive .img-top, #vroom .img-top{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+#chain:hover .img-top, #coexist:hover .img-top, #liftar:hover .img-top, #HiFive:hover .img-top, #vroom:hover .img-top{
+  display: inline;
+}
+#chain:hover .img-below, #coexist:hover .img-below, #liftar:hover .img-below, #HiFive:hover .img-below, #vroom:hover .img-below{
+  display: none;
+}
 
 /*bubble Me*/
 
