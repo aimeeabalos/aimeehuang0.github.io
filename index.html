@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <style>
-    @media all and (max-width: 760px) {
+    @media all and (max-width: 800px) {
         .my-breakpoint .ui-block-a,
         .my-breakpoint .ui-block-b,
         .my-breakpoint .ui-block-c,
@@ -23,138 +24,56 @@
         .ui-block-b,.ui-body,.ui-body-b {
         min-height: 300px;
         }
-
-        /*Button*/
-        button{
-        padding: 20px;
-        }
-        .button-two{
-        margin-left: 23vw;
-        }
-        /*Button Two*/
-        .button-two {
-        border-radius: 4px;
-        background-color:white;
-        border: 1px solid;
-        border-color: black;
-        color: black;
-        padding: 10px;
-        width: 50vw;
-        transition: all 0.5s;
-        font-size: 12px;
-        }
-        .button-two span:after {
-        right: -10px;
-        }
-        .button-two:hover span {
-        color:white;
-        padding-right: 10px;
-        }
-        #MyProject
-        {
-        height:auto;
-        }
-        .caseIntro{
-        font-size: 16px;
-        }
-        #main-menu{
-        margin-top: 10%;
-        text-align: center;
-        }
-        .mainPic{
-        display: none;
-        }
-        .meContact
-        {
-        width:100%;
-        margin:10% 0%;
-        }
-        .meContact p {
-        width:100%;
-        font-size:30px;
-        margin-right:0%;
-        margin-left:0%;
-        }
-        .meContact .pIntro {
-        width:100%;
-        font-size:13px;
-        }
-        .aboutMeContainer
-        {
-        width: 100%;
-        margin:0% 0% 0% 0%;
-        height: auto;
-        float: left;
-        }
-        .aboutMeContainer p
-        {
-        color: grey;
-        font-size: 16px;
-        }
-        .socialPic{
-        margin-left: 27vw;
-        }
-        .socialPic img{
-        width: 40px;
-        padding: 4px;
-        }
-    }
-    @media all and (max-width: 560px) {
-        #AllWork
-        {
-        height: auto;
-        }
-        .listcontent{
-        font-size: 2vw;
-        left: 53vw;
-        }
-        #AllWork {
-        width:100%;
-        height: auto;
-        padding:5%;
-        }
-        .image{
-        margin-left: 11vw;
-        }
-        #footer p{
-            font-size: 12px;
-            line-height: 14px;
-        }
-        .socialPic{
-        margin-left: 18vw;
-        }
     }
     </style>
 </head>
 
 <body>
-   <a href="#MyLink" id="mylogo" title="My Logo link"></a>
-   <nav id="sideNav1">
+   <a href="index.html" id="mylogo" title="My Logo link"></a>
+	 <nav id="sideNav1" style="top:11vh;">
+	 		 <ul>
+	 				 <li><a href="index.html#MyWorkTitle">- &nbsp Projects &nbsp -</a></li>
+	 				 <li><a href="about.html">- &nbsp About Me &nbsp-</a></li>
+	 		 </ul>
+	  </nav>
+
+   <nav class="sideverticalNavOuter">
         <!-- <h2>&nbsp;</h2> -->
-		<h2><a href="index.html">Home</a></h2>
-		<ul>
-            <li><a href="#MyWorkTitle">My Work</a></li>
-			<li><a href="#MyProject">My Systems</a></li>
-			<li><a href="about.html"><span class="emphasize">About Me</span></a></li>
-		</ul>
+		<!-- <h2><a href="index.html">Home</a></h2> -->
+		<div class="sideverticalNavInner">
+			<ul class="list rotate">
+				<li>&nbsp - &nbsp</li>
+	      <li><a href="#MyWorkTitle">Projects</a></li>
+				<li>&nbsp | &nbsp</li>
+				<!-- <li><a href="#MyProject">My Systems</a></li> -->
+				<li><a href="about.html"><span class="">About</span></a></li>
+				<li>&nbsp - &nbsp</li>
+			</ul>
+		</div>
 	</nav>
 
     <article class="panel" id="MyIntro">
         <div class="MyName">
           <div id="name" class="scroll-name">
-            <div id="name-txt">AIMEE</div>
+            <div id="name-txt">Aimee Abalos</div>
           </div>
         </div>
 
-        <div class="listcontent">
-                <ul>
+        <div class="listcontentm">
+								<p style="color:#a1a1a1;">
+									a <span style="color:#000000;"><u> Developer , Engineer , Designer , Thinker , Maker </u></span>who is currently interested in <span style="color:#000000;"><u>AR/VR/MR/UX</u></span> and <u>
+									<span class="typewrite" style="color:#000000;" data-period="2000" data-type='[ "extreme roller coasters.", "speaks four languanges fluently.", "dreamed to live in Arctic.", "being friends with bears.", "saving the world.","love french fries and ice cream", "chinese Kung Fu." ]'>
+									<span class="wrap"></span>
+							    </u></span>
+								</p>
+
+                <!-- <ul>
                     <li>a Developer</li>
                     <li>an Engineer</li>
                     <li>a Designer</li>
                     <li>a Traveler</li>
                     <li>an Idealist</li>
-                </ul>
-                <p style="color:#c1c1c1;">who build and explore<!-- aiming to change the world --></p>
+                </ul> -->
         </div>
 
 

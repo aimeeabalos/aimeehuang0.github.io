@@ -220,13 +220,36 @@ h6 {
   {
     position: absolute;
     top:10px;
-    width:100px;
+    width:120px;
     display: block;
     left:-25vw;
     z-index: 50;
     left:5vw;
     z-index: 1000;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sideverticalNavOuter
+  {
+    position: fixed;
+    top:50vh;
+    right: 270px;
+    z-index: 1000;
+    display: none;
+  }
+  .sideverticalNavInner
+  {
+    position: absolute;
+    width:500px;
+    z-index: 50;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-transform: rotate(90deg);
+    font-size: 12px;
+    letter-spacing: 0.0625em;
+  }
+  .sideverticalNavInner .list li
+  {
+    display: inline-block;
   }
 
   #mylogo {
@@ -317,8 +340,7 @@ article#MyIntro{
 #main-menu .nav-bar { list-style:none; margin-top: -24px; font-size: 12px;}
 #main-menu .nav-bar li { display:inline; padding:0 10px; }
 #main-menu .nav-bar li.active{
-    border-bottom: 1px solid #DC3D24;
-    padding-bottom: 4px;
+  text-decoration: line-through;
 }
 
 .emphasize{
@@ -337,7 +359,7 @@ article#MyIntro{
 #name
 {
   margin:0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   height: 40vh;
   text-align: center;
@@ -345,15 +367,16 @@ article#MyIntro{
 }
 
 #name-txt {
-  font-family: "", sans-serif;
+  font-family: 'Poppins', sans-serif;
   width: 80vw;
   margin:0 auto;
   position: absolute;
-  font-size: 20vw;
-  font-weight: 400;
+  line-height: 80%;
+  font-size: 13vw;
+  font-weight: 800;
   text-align: center;
-  letter-spacing:4.5vw;
-  top:34%;
+  /* letter-spacing:4.5vw; */
+  top:40%;
 }
 
 .listcontent {
@@ -365,14 +388,40 @@ article#MyIntro{
   line-height: 40px;
   color: #7d7d7d;
   height: 40px;
-  overflow:hidden;
+  /* overflow:hidden; */
   font-weight:400;
+  /* border-bottom: 2px solid #ce3635;
+  padding-bottom: .125em; */
+}
 
+.listcontentm{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  /* left: 50vw; */
+  top:75vh;
+  font-size: 1.4vw;
+  line-height: 200%;
+  color: #7d7d7d;
+  height: 40px;
+  font-weight:400;
+}
+.listcontentm p{
+  max-width: 58vw;
+  margin:0 auto;
+}
+
+.listcontentm u{
+  text-decoration: none;
+  border-bottom: 2px solid #ce3635;
+  padding-bottom: .125em;
 }
 
 .listcontent p {
   display:inline;
   margin:0;
+  border-bottom: 2px solid #ce3635;
+  padding-bottom: .125em;
 }
 
 .listcontent ul {
@@ -397,11 +446,11 @@ article#MyIntro{
 
 @keyframes change {
   0%, 13%, 100%   {transform:translateY(0);}
-  17%,29%  {transform:translateY(-20%);}
-  34%,46%  {transform:translateY(-40%);}
-  51%,63%  {transform:translateY(-60%);}
-  68%,80%  {transform:translateY(-80%);}
-  85%,97%  {transform:translateY(-100%);}
+  17%,29%  {transform:translateY(0%);}
+  34%,46%  {transform:translateY(-20%);}
+  51%,63%  {transform:translateY(-40%);}
+  68%,80%  {transform:translateY(-60%);}
+  85%,97%  {transform:translateY(-80%);}
 }
 
 
@@ -1210,3 +1259,128 @@ article#MyIntro{
   .gridColums span {
     font-size: 1vw;
   }
+
+
+@media all and (max-width: 800px) {
+    .my-breakpoint .ui-block-a,
+    .my-breakpoint .ui-block-b,
+    .my-breakpoint .ui-block-c,
+    .my-breakpoint .ui-block-d,
+    .my-breakpoint .ui-block-e {
+    width: 100%;
+    float:none;
+    min-height: 300px;
+    }
+    .ui-block-b,.ui-body,.ui-body-b {
+    min-height: 300px;
+    }
+
+    /*Button*/
+    button{
+    padding: 20px;
+    }
+    .button-two{
+    margin-left: 23vw;
+    }
+    /*Button Two*/
+    .button-two {
+    border-radius: 4px;
+    background-color:white;
+    border: 1px solid;
+    border-color: black;
+    color: black;
+    padding: 10px;
+    width: 50vw;
+    transition: all 0.5s;
+    font-size: 12px;
+    }
+    .button-two span:after {
+    right: -10px;
+    }
+    .button-two:hover span {
+    color:white;
+    padding-right: 10px;
+    }
+    #MyProject
+    {
+    height:auto;
+    }
+    .caseIntro{
+    font-size: 16px;
+    }
+    #main-menu{
+    margin-top: 10%;
+    text-align: center;
+    }
+    .mainPic{
+    display: none;
+    }
+    .meContact
+    {
+    width:100%;
+    margin:10% 0%;
+    }
+    .meContact p {
+    width:100%;
+    font-size:30px;
+    margin-right:0%;
+    margin-left:0%;
+    }
+    .meContact .pIntro {
+    width:100%;
+    font-size:13px;
+    }
+    .aboutMeContainer
+    {
+    width: 100%;
+    margin:0% 0% 0% 0%;
+    height: auto;
+    float: left;
+    }
+    .aboutMeContainer p
+    {
+    color: grey;
+    font-size: 16px;
+    }
+    .socialPic{
+    margin-left: 27vw;
+    }
+    .socialPic img{
+    width: 40px;
+    padding: 4px;
+    }
+    .listcontentm p{
+      font-size: 3vw;
+      line-height: 150%;
+    }
+    #name-txt{
+      top: 38%;
+      font-size: 20vw;
+      line-height: 80%;
+    }
+}
+@media all and (max-width: 560px) {
+    #AllWork
+    {
+    height: auto;
+    }
+    .listcontent{
+    font-size: 2vw;
+    left: 53vw;
+    }
+    #AllWork {
+    width:100%;
+    height: auto;
+    padding:5%;
+    }
+    .image{
+    margin-left: 11vw;
+    }
+    #footer p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .socialPic{
+    margin-left: 18vw;
+    }
+}
