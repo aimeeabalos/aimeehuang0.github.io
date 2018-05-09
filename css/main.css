@@ -236,6 +236,9 @@ h6 {
     z-index: 1000;
     display: none;
   }
+  #sideNav1 .active{
+    text-decoration: line-through;
+  }
   .sideverticalNavInner
   {
     position: absolute;
