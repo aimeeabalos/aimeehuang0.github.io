@@ -2,22 +2,30 @@
 /*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");*/
 /*@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:500,700");*/
 
+@font-face {
+    font-family: Futura;
+    src: url("font/Futura.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: bold;
+    src: url("font/Futura_bold.otf") format("opentype");
+}
+
 /* Reset */
 * {
   box-sizing: border-box;
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, h7, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
-  /*font-family: 'Raleway', sans-serif;*/
-  /*font-family: 'Libre Franklin', sans-serif;*/
-  /* border: 1px solid; */
-
-
+  font-family: 'Poppins', sans-serif;
+  /* border: 0.5px solid; */
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -52,17 +60,11 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  font-size: 16pt;
+  font-size: 9pt;
   font-weight: 300;
   line-height: 1.5;
 }
 
-@media screen and (max-width: 1680px) {
-
-  body, input, select, textarea {
-    font-size: 14pt;
-  }
-}
 @media screen and (max-width: 1280px) {
   body, input, select, textarea {
     font-size: 12pt;
@@ -98,11 +100,21 @@ p {
 }
 
 h1 {
-  font-family: 'Merriweather', serif;
-  font-size: 5em;
-  font-weight: 100;
-  line-height: 1.3;
+  /*web title*/
+  width: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100pt;
+  font-weight: 500;
   margin: 0 0 0 0;
+  line-height: 0.8;
+
+}
+
+.h1border{
+  position: absolute;
+  width: 180px;
+  border-bottom: 10px solid;
+  border-color: #DC3D24;
 }
 
 h1 a {
@@ -111,23 +123,19 @@ h1 a {
 
 @media screen and (max-width: 736px) {
   h1 {
-    font-size: 2em;
+    font-size: 24pt;
     margin: 0 0 1em 0;
   }
 }
 
 @media screen and (max-width: 360px) {
   h1 {
-    font-size: 1.75em;
+    font-size: 18pt;
   }
 }
-h3, h5 {
-  font-family: 'Merriweather', serif;
-  font-weight: 100;
-  line-height: 1.5;
-  margin: 0 0 6vh 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+
+h1, h2, h3, h4, h5, h6, h7{
+  /* border: 1px solid; */
 }
 
 h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -135,39 +143,115 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h2 {
-  font-weight: 950;
-  line-height: 1.5;
-  font-family: 'Raleway', sans-serif;
+  /*title*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 18pt;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 1.1em;
-  margin: 1.5vh 0 3vh 0;
-/*  color: gray;*/
+  letter-spacing: 0.6pt;
+  /* border: 4px solid;
+  border-color: orange; */
+  margin: 1.5vh 0;
+  /* line-height: 1.5;
+  letter-spacing: 1.2pt;
+  margin: 1.5vh 0 3vh 0; */
 }
 
-h3 {
-  font-size: 1em;
+h3{
+  /*web title sub caption*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  margin: 4vh 0 6vh 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+
+  /* border: 4px solid;
+  border-color: yellow; */
 }
 
 h4 {
-/*  font-size: 1em;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.5;
-  letter-spacing: 0.05em;*/
+  /*break point*/
+  font-size: 8pt;
   font-style: italic;
   color: lightgrey;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  margin: 2vh 0;
+  /* border: 4px solid;
+  border-color: green; */
 }
 
 h5 {
-  font-size: 0.8em;
-  font-family: 'Verdana', sans-serif;
+  /*small title*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1.2pt;
+  margin: 2.5vh 0;
+  /* border: 4px solid;
+  border-color: blue; */
 }
 
 h6 {
-  font-size: 1em;
+  /*body text*/
+  font-size: 12pt;
   font-family: 'Raleway', sans-serif;
+  font-weight: 200;
   line-height: 1.5;
   letter-spacing: 0.05em;
+  margin: 1.5vh 0 2vh 0;
+  /* border: 4px solid;
+  border-color: violet; */
+}
+
+h6 b{
+  /*body text*/
+  font-weight: 700;
+}
+
+h6 p{
+  /*body text*/
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2em;
+  padding: 6% 0 1% 0;
+}
+
+.h7{
+  /*web title sub caption*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  margin: 2vh 0 6vh 0;
+  /* padding: 4vh 0 0 0; */
+  line-height: 1.5;
+  letter-spacing: 1.2;
+  text-transform: uppercase;
+  /* border: 4px solid;
+  border-color: grey; */
+}
+
+.verticaltext {
+    transform: rotate(90deg);
+    transform-origin: right, top;
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin:right, top;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin:right, top;
+    position: absolute;
+    right:-7vw;
+    bottom:10vh;
+    text-transform: capitalize;
+    /* width: 10%; */
+}
+.horizontaltext{
+  position: absolute;
+  right:0;
+  top:-5vh;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 980px) {
@@ -178,13 +262,12 @@ h6 {
 }
 
 @media screen and (max-width: 736px) {
-
   h2 {
-  font-size: 1em;
+  font-size: 9pt;
   }
 
   h3 {
-  font-size: 0.8em;
+  font-size: 6pt;
   }
 
 }
@@ -346,7 +429,18 @@ article#MyIntro{
   text-decoration: line-through;
 }
 
+.sideDesc{
+  font-family: "Raleway", san-serif;
+  float: right;
+  min-width: 15vw;
+}
+
 .emphasize{
+  font-family: "Raleway", san-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 0.3em;
   color: #DC3D24;
 }
 
@@ -374,7 +468,7 @@ article#MyIntro{
   width: 80vw;
   margin:0 auto;
   position: absolute;
-  line-height: 80%;
+  line-height: 83%;
   font-size: 13vw;
   font-weight: 800;
   text-align: center;
