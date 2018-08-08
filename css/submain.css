@@ -463,10 +463,14 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
   	width: 15%;
 }
 
+.span_05_of_6 {
+  	width: 7.5%;
+}
+
 /*  GRID OF THREE  */
-.span_3_of_3 { width: 99%; }
-.span_2_of_3 { width: 62%; }
-.span_1_of_3 { width: 29.26%; }
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 65.6%; }
+.span_1_of_3 { width: 32%; }
 
 
 #nav-link{ text-align: center;width: 90%;margin: 5%;}

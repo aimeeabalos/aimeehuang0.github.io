@@ -608,11 +608,11 @@ article#MyIntro{
 
 .socialPic
 {
-  margin-left:3%;
+  margin-left:2.5%;
 }
 .socialPic img{
-  width: 4.5vw;
-  padding: 0vw 1vw;
+  width: 4vw;
+  padding: 0vw 0.5vw;
   /*padding-top: 5%*/
 }
 .meContact p{
