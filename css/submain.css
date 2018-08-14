@@ -392,7 +392,7 @@ http://tympanus.net/codrops/2013/10/25/split-layout/*/
 .col6 {
 	display: block;
 	float:left;
-	margin: 0 0 0 2%;
+	margin: 0% 0% 0% 2%;
 }
 .col:first-child { margin-left: 0%; }
 .col1:first-child { margin-left: 0%; }
